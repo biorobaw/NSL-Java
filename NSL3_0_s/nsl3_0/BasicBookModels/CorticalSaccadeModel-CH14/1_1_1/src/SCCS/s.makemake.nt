@@ -1,0 +1,33 @@
+h35224
+s 00021/00000/00000
+d D 1.1 99/09/22 22:42:57 aalx 1 0
+c date and time created 99/09/22 22:42:57 by aalx
+e
+u
+U
+f e 0
+t
+T
+I 1
+
+rm -f _make1.nt 
+ls *.mod > _mod.lst
+awk <_mod.lst '{print $1}' | awk -F. 'BEGIN{printf("all:");SS="";}
+                                               {printf("%s.java ",$1);
+                                                SS=SS $1".java ";}
+                                               END{printf("\n\t@bash makedelzero.nt %s\n",SS);} ' > _make1.nt
+awk <_mod.lst '{print $1}' | awk -F. '{printf("%s.java: %s.mod\n\t@rm -f %s.nlx %s.java\n\tjava lx.src.NPPP -nocomments < %s.mod > %s.nlx\n\tjava npp.src.NPP -nocomments < %s.nlx > %s.java\n",$1,$1,$1,$1,$1,$1,$1,$1);}' >> _make1.nt
+awk <_mod.lst '{print $1}' | awk -F. '{printf("%s.mod: \n\t\n",$1);} ' >>_make1.nt
+awk <_mod.lst '{print $1}' | awk -F. 'BEGIN{printf("clean:\n")}
+                                               {printf("\t@rm -f %s.java\n\t@rm -f %s.nlx\n",$1,$1);}' >> _make1.nt
+
+rm -f _make2.nt 
+awk <_mod.lst '{print $1}' | awk -F. 'BEGIN{printf("all:")}
+                                               {printf("%s.class ",$1);}
+                                               END{printf("\n");}' > _make2.nt
+awk <_mod.lst '{print $1}' | awk -F. '{printf("%s.class: %s.java\n\tjavac  %s.java\n",$1,$1,$1);}' >> _make2.nt
+awk <_mod.lst '{print $1}' | awk -F. 'BEGIN{printf("clean:\n")}
+                                               {printf("\t@rm -f %s.class\n",$1);}' >> _make2.nt
+
+rm -f _mod.lst
+E 1

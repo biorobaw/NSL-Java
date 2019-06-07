@@ -1,0 +1,81 @@
+all:CEREB_module.java DART_UI_module.java DART_out.java DartModel.java FCX_layer.java GC_layer.java IO_layer.java NUC_layer.java NslDartGraphCanvas.java PC_layer.java PP_layer.java SENS_layer.java THROW_module.java 
+	@makedelzero.unix CEREB_module.java DART_UI_module.java DART_out.java DartModel.java FCX_layer.java GC_layer.java IO_layer.java NUC_layer.java NslDartGraphCanvas.java PC_layer.java PP_layer.java SENS_layer.java THROW_module.java 
+CEREB_module.java: CEREB_module.mod
+	@/bin/rm -f CEREB_module.nlx CEREB_module.java
+	java lx.src.NPPP -nocomments < CEREB_module.mod > CEREB_module.nlx
+	java npp.src.NPP -nocomments < CEREB_module.nlx > CEREB_module.java
+DART_UI_module.java: DART_UI_module.mod
+	@/bin/rm -f DART_UI_module.nlx DART_UI_module.java
+	java lx.src.NPPP -nocomments < DART_UI_module.mod > DART_UI_module.nlx
+	java npp.src.NPP -nocomments < DART_UI_module.nlx > DART_UI_module.java
+DART_out.java: DART_out.mod
+	@/bin/rm -f DART_out.nlx DART_out.java
+	java lx.src.NPPP -nocomments < DART_out.mod > DART_out.nlx
+	java npp.src.NPP -nocomments < DART_out.nlx > DART_out.java
+DartModel.java: DartModel.mod
+	@/bin/rm -f DartModel.nlx DartModel.java
+	java lx.src.NPPP -nocomments < DartModel.mod > DartModel.nlx
+	java npp.src.NPP -nocomments < DartModel.nlx > DartModel.java
+FCX_layer.java: FCX_layer.mod
+	@/bin/rm -f FCX_layer.nlx FCX_layer.java
+	java lx.src.NPPP -nocomments < FCX_layer.mod > FCX_layer.nlx
+	java npp.src.NPP -nocomments < FCX_layer.nlx > FCX_layer.java
+GC_layer.java: GC_layer.mod
+	@/bin/rm -f GC_layer.nlx GC_layer.java
+	java lx.src.NPPP -nocomments < GC_layer.mod > GC_layer.nlx
+	java npp.src.NPP -nocomments < GC_layer.nlx > GC_layer.java
+IO_layer.java: IO_layer.mod
+	@/bin/rm -f IO_layer.nlx IO_layer.java
+	java lx.src.NPPP -nocomments < IO_layer.mod > IO_layer.nlx
+	java npp.src.NPP -nocomments < IO_layer.nlx > IO_layer.java
+NUC_layer.java: NUC_layer.mod
+	@/bin/rm -f NUC_layer.nlx NUC_layer.java
+	java lx.src.NPPP -nocomments < NUC_layer.mod > NUC_layer.nlx
+	java npp.src.NPP -nocomments < NUC_layer.nlx > NUC_layer.java
+NslDartGraphCanvas.java: NslDartGraphCanvas.mod
+	@/bin/rm -f NslDartGraphCanvas.nlx NslDartGraphCanvas.java
+	java lx.src.NPPP -nocomments < NslDartGraphCanvas.mod > NslDartGraphCanvas.nlx
+	java npp.src.NPP -nocomments < NslDartGraphCanvas.nlx > NslDartGraphCanvas.java
+PC_layer.java: PC_layer.mod
+	@/bin/rm -f PC_layer.nlx PC_layer.java
+	java lx.src.NPPP -nocomments < PC_layer.mod > PC_layer.nlx
+	java npp.src.NPP -nocomments < PC_layer.nlx > PC_layer.java
+PP_layer.java: PP_layer.mod
+	@/bin/rm -f PP_layer.nlx PP_layer.java
+	java lx.src.NPPP -nocomments < PP_layer.mod > PP_layer.nlx
+	java npp.src.NPP -nocomments < PP_layer.nlx > PP_layer.java
+SENS_layer.java: SENS_layer.mod
+	@/bin/rm -f SENS_layer.nlx SENS_layer.java
+	java lx.src.NPPP -nocomments < SENS_layer.mod > SENS_layer.nlx
+	java npp.src.NPP -nocomments < SENS_layer.nlx > SENS_layer.java
+THROW_module.java: THROW_module.mod
+	@/bin/rm -f THROW_module.nlx THROW_module.java
+	java lx.src.NPPP -nocomments < THROW_module.mod > THROW_module.nlx
+	java npp.src.NPP -nocomments < THROW_module.nlx > THROW_module.java
+clean:
+	@/bin/rm -f CEREB_module.java
+	@/bin/rm -f CEREB_module.nlx
+	@/bin/rm -f DART_UI_module.java
+	@/bin/rm -f DART_UI_module.nlx
+	@/bin/rm -f DART_out.java
+	@/bin/rm -f DART_out.nlx
+	@/bin/rm -f DartModel.java
+	@/bin/rm -f DartModel.nlx
+	@/bin/rm -f FCX_layer.java
+	@/bin/rm -f FCX_layer.nlx
+	@/bin/rm -f GC_layer.java
+	@/bin/rm -f GC_layer.nlx
+	@/bin/rm -f IO_layer.java
+	@/bin/rm -f IO_layer.nlx
+	@/bin/rm -f NUC_layer.java
+	@/bin/rm -f NUC_layer.nlx
+	@/bin/rm -f NslDartGraphCanvas.java
+	@/bin/rm -f NslDartGraphCanvas.nlx
+	@/bin/rm -f PC_layer.java
+	@/bin/rm -f PC_layer.nlx
+	@/bin/rm -f PP_layer.java
+	@/bin/rm -f PP_layer.nlx
+	@/bin/rm -f SENS_layer.java
+	@/bin/rm -f SENS_layer.nlx
+	@/bin/rm -f THROW_module.java
+	@/bin/rm -f THROW_module.nlx

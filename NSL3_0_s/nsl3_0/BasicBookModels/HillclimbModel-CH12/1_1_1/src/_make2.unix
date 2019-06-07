@@ -1,0 +1,11 @@
+all:HillOut.class HillclimbCalc.class HillclimbTop.class 
+HillOut.class: HillOut.java
+	javac  HillOut.java
+HillclimbCalc.class: HillclimbCalc.java
+	javac  HillclimbCalc.java
+HillclimbTop.class: HillclimbTop.java
+	javac  HillclimbTop.java
+clean:
+	/bin/rm -f HillOut.class
+	/bin/rm -f HillclimbCalc.class
+	/bin/rm -f HillclimbTop.class

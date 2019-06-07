@@ -1,0 +1,5 @@
+1. need to change from upper case model names to lower case model
+	instance names in all nslGetValues and nslSetValues.
+
+
+

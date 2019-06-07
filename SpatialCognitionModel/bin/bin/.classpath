@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<classpath>
+	<classpathentry kind="src" path=""/>
+	<classpathentry kind="src" path="/SpatialCognitionModel"/>
+	<classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER"/>
+	<classpathentry kind="con" path="org.eclipse.jdt.USER_LIBRARY/Java3D 1.5.2 amd64"/>
+	<classpathentry kind="con" path="org.eclipse.jdt.USER_LIBRARY/jCharts 0.7.5"/>
+	<classpathentry kind="con" path="org.eclipse.jdt.USER_LIBRARY/NSL 3.0.s"/>
+	<classpathentry kind="con" path="org.eclipse.jdt.USER_LIBRARY/JavaCPP 0.7"/>
+	<classpathentry kind="con" path="org.eclipse.jdt.USER_LIBRARY/JavaCV 0.7"/>
+	<classpathentry kind="output" path="bin"/>
+</classpath>

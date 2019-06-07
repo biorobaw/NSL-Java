@@ -1,0 +1,17 @@
+# SCCS @(#)calibration.nsl	1.1 -- 09/24/99 --19:12:50
+#
+# Dart model
+#
+
+proc nslMain {protocol} {
+ 
+    nsl set system.protocol $protocol
+     	
+    puts "Training and Run model"
+    nsl trainAndRunAll
+ 
+}
+
+# protocols: { basic, transfer, calibration }.
+
+nslMain calibration

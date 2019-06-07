@@ -1,0 +1,25 @@
+h29314
+s 00013/00000/00000
+d D 1.1 99/09/24 18:57:47 aalx 1 0
+c date and time created 99/09/24 18:57:47 by aalx
+e
+u
+U
+f e 0
+t
+T
+I 1
+#!/bin/csh
+# SCCS @(#)makedelzero	1.1 - 10/05/98 - 19:32:24
+# $Log: delzero,v $
+# Revision 1.1  1997/12/13 01:55:41  erhan
+# aa - commited for erhan. added Makefiles
+#
+foreach i ( $argv )
+	set chars = `wc -c $i`
+	if ($chars[1] == 0) then
+#		echo removing zero length file  $i
+		rm -f $i
+	endif
+end
+E 1

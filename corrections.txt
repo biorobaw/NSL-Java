@@ -1,0 +1,45 @@
+for enumeration, "enum" cannot be used.
+since java 1.5, it is now a java keyword.
+changing it to "enumer" to resolve this issue.
+
+show() from AWT is deprecated.
+use setVisible(true) instead.
+
+Redundant calls removed and some objects
+now incorporate generics.
+
+changed C-style declarations like "String test[]"
+to Java-style declarations "String[] test"
+
+changed "toLowerCase().indexOf("example") >= 0" to
+"toLowerCase().contains("example")" introduced in java 5+
+
+converted some concatenating String/StringBuffer variables into StringBuilder types
+
+Appending calls with concatenations "append("test" + "123")" replaced with chained calls "append("test").append("123")"
+
+unused elements and declaration access are left unmodified should external code access the NSL SDK
+
+redundant assignments that may cause side effects if changed are left unmodified to prevent issues along the line
+
+some boolean methods inverted for performance
+
+unneeded unboxing calls "(marks.pop()).intValue()" removed, resulting in "marks.pop()"
+
+nslc NslCompiler's cleanFilesInDirectory() method now has exception handling
+
+most item listeners are now lambda expressions
+addItemListener(new ItemListener() {
+            public void itemStateChanged(ItemEvent evt) {
+                System.out.println("hello world");
+            }
+        });
+addItemListener(evt -> System.out.println("hello world"));
+
+NslShell uses KeyEvent()'s deprecated constructor.
+Using the new constructor by now passing "KeyEvent.CHAR_UNDEFINED" to fill in its Unicode variable corrects this.
+
+if statements that do "(example != null) && (example instanceof String)" now just have the instanceof check,
+as instanceof already assumes non-nullity
+
+changed deprecated stop() call in NslCmdQuit for the scheduler thread with a stopScheduler() method in NslSystem that sets the scheduler to null as an attempt to desync the scheduler thread to a halt.

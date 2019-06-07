@@ -1,0 +1,327 @@
+all:AddElementToLearnDialog.java BSG.java CDlatburst.java CDlatinh.java CDlattan.java CDmedburst.java CDmedinh.java CDmedtan.java CrowleyFrame.java CrowleyHelp.java CrowleyOut.java CrowleyParams.java CrowleyTop.java DoubleSaccade.java Element.java EventForm.java ExperimentInterface.java FEF.java Func.java GPElatburst.java GPEmedburst.java Generator.java IJpair.java Illumination.java Illuminations.java LC.java LIP.java Lat.java Med.java MedBulk.java PFC.java PFCfovea.java PFCgo.java PFCmem.java PFCseq.java RNMEDinh.java SC.java SCbu.java SCqv.java SCsac.java SNC.java SNRlatburst.java SNRmedburst.java STNlatburst.java STNmedburst.java SetMappingParamDialog.java SubData.java Target.java ThFEFmem.java ThLIPmem.java ThMEDlcn.java ThPFCmem.java Thal.java VISINPUT.java 
+	@makedelzero.unix AddElementToLearnDialog.java BSG.java CDlatburst.java CDlatinh.java CDlattan.java CDmedburst.java CDmedinh.java CDmedtan.java CrowleyFrame.java CrowleyHelp.java CrowleyOut.java CrowleyParams.java CrowleyTop.java DoubleSaccade.java Element.java EventForm.java ExperimentInterface.java FEF.java Func.java GPElatburst.java GPEmedburst.java Generator.java IJpair.java Illumination.java Illuminations.java LC.java LIP.java Lat.java Med.java MedBulk.java PFC.java PFCfovea.java PFCgo.java PFCmem.java PFCseq.java RNMEDinh.java SC.java SCbu.java SCqv.java SCsac.java SNC.java SNRlatburst.java SNRmedburst.java STNlatburst.java STNmedburst.java SetMappingParamDialog.java SubData.java Target.java ThFEFmem.java ThLIPmem.java ThMEDlcn.java ThPFCmem.java Thal.java VISINPUT.java 
+AddElementToLearnDialog.java: AddElementToLearnDialog.mod
+	@/bin/rm -f AddElementToLearnDialog.nlx AddElementToLearnDialog.java
+	java lx.src.NPPP -nocomments < AddElementToLearnDialog.mod > AddElementToLearnDialog.nlx
+	java npp.src.NPP -nocomments < AddElementToLearnDialog.nlx > AddElementToLearnDialog.java
+BSG.java: BSG.mod
+	@/bin/rm -f BSG.nlx BSG.java
+	java lx.src.NPPP -nocomments < BSG.mod > BSG.nlx
+	java npp.src.NPP -nocomments < BSG.nlx > BSG.java
+CDlatburst.java: CDlatburst.mod
+	@/bin/rm -f CDlatburst.nlx CDlatburst.java
+	java lx.src.NPPP -nocomments < CDlatburst.mod > CDlatburst.nlx
+	java npp.src.NPP -nocomments < CDlatburst.nlx > CDlatburst.java
+CDlatinh.java: CDlatinh.mod
+	@/bin/rm -f CDlatinh.nlx CDlatinh.java
+	java lx.src.NPPP -nocomments < CDlatinh.mod > CDlatinh.nlx
+	java npp.src.NPP -nocomments < CDlatinh.nlx > CDlatinh.java
+CDlattan.java: CDlattan.mod
+	@/bin/rm -f CDlattan.nlx CDlattan.java
+	java lx.src.NPPP -nocomments < CDlattan.mod > CDlattan.nlx
+	java npp.src.NPP -nocomments < CDlattan.nlx > CDlattan.java
+CDmedburst.java: CDmedburst.mod
+	@/bin/rm -f CDmedburst.nlx CDmedburst.java
+	java lx.src.NPPP -nocomments < CDmedburst.mod > CDmedburst.nlx
+	java npp.src.NPP -nocomments < CDmedburst.nlx > CDmedburst.java
+CDmedinh.java: CDmedinh.mod
+	@/bin/rm -f CDmedinh.nlx CDmedinh.java
+	java lx.src.NPPP -nocomments < CDmedinh.mod > CDmedinh.nlx
+	java npp.src.NPP -nocomments < CDmedinh.nlx > CDmedinh.java
+CDmedtan.java: CDmedtan.mod
+	@/bin/rm -f CDmedtan.nlx CDmedtan.java
+	java lx.src.NPPP -nocomments < CDmedtan.mod > CDmedtan.nlx
+	java npp.src.NPP -nocomments < CDmedtan.nlx > CDmedtan.java
+CrowleyFrame.java: CrowleyFrame.mod
+	@/bin/rm -f CrowleyFrame.nlx CrowleyFrame.java
+	java lx.src.NPPP -nocomments < CrowleyFrame.mod > CrowleyFrame.nlx
+	java npp.src.NPP -nocomments < CrowleyFrame.nlx > CrowleyFrame.java
+CrowleyHelp.java: CrowleyHelp.mod
+	@/bin/rm -f CrowleyHelp.nlx CrowleyHelp.java
+	java lx.src.NPPP -nocomments < CrowleyHelp.mod > CrowleyHelp.nlx
+	java npp.src.NPP -nocomments < CrowleyHelp.nlx > CrowleyHelp.java
+CrowleyOut.java: CrowleyOut.mod
+	@/bin/rm -f CrowleyOut.nlx CrowleyOut.java
+	java lx.src.NPPP -nocomments < CrowleyOut.mod > CrowleyOut.nlx
+	java npp.src.NPP -nocomments < CrowleyOut.nlx > CrowleyOut.java
+CrowleyParams.java: CrowleyParams.mod
+	@/bin/rm -f CrowleyParams.nlx CrowleyParams.java
+	java lx.src.NPPP -nocomments < CrowleyParams.mod > CrowleyParams.nlx
+	java npp.src.NPP -nocomments < CrowleyParams.nlx > CrowleyParams.java
+CrowleyTop.java: CrowleyTop.mod
+	@/bin/rm -f CrowleyTop.nlx CrowleyTop.java
+	java lx.src.NPPP -nocomments < CrowleyTop.mod > CrowleyTop.nlx
+	java npp.src.NPP -nocomments < CrowleyTop.nlx > CrowleyTop.java
+DoubleSaccade.java: DoubleSaccade.mod
+	@/bin/rm -f DoubleSaccade.nlx DoubleSaccade.java
+	java lx.src.NPPP -nocomments < DoubleSaccade.mod > DoubleSaccade.nlx
+	java npp.src.NPP -nocomments < DoubleSaccade.nlx > DoubleSaccade.java
+Element.java: Element.mod
+	@/bin/rm -f Element.nlx Element.java
+	java lx.src.NPPP -nocomments < Element.mod > Element.nlx
+	java npp.src.NPP -nocomments < Element.nlx > Element.java
+EventForm.java: EventForm.mod
+	@/bin/rm -f EventForm.nlx EventForm.java
+	java lx.src.NPPP -nocomments < EventForm.mod > EventForm.nlx
+	java npp.src.NPP -nocomments < EventForm.nlx > EventForm.java
+ExperimentInterface.java: ExperimentInterface.mod
+	@/bin/rm -f ExperimentInterface.nlx ExperimentInterface.java
+	java lx.src.NPPP -nocomments < ExperimentInterface.mod > ExperimentInterface.nlx
+	java npp.src.NPP -nocomments < ExperimentInterface.nlx > ExperimentInterface.java
+FEF.java: FEF.mod
+	@/bin/rm -f FEF.nlx FEF.java
+	java lx.src.NPPP -nocomments < FEF.mod > FEF.nlx
+	java npp.src.NPP -nocomments < FEF.nlx > FEF.java
+Func.java: Func.mod
+	@/bin/rm -f Func.nlx Func.java
+	java lx.src.NPPP -nocomments < Func.mod > Func.nlx
+	java npp.src.NPP -nocomments < Func.nlx > Func.java
+GPElatburst.java: GPElatburst.mod
+	@/bin/rm -f GPElatburst.nlx GPElatburst.java
+	java lx.src.NPPP -nocomments < GPElatburst.mod > GPElatburst.nlx
+	java npp.src.NPP -nocomments < GPElatburst.nlx > GPElatburst.java
+GPEmedburst.java: GPEmedburst.mod
+	@/bin/rm -f GPEmedburst.nlx GPEmedburst.java
+	java lx.src.NPPP -nocomments < GPEmedburst.mod > GPEmedburst.nlx
+	java npp.src.NPP -nocomments < GPEmedburst.nlx > GPEmedburst.java
+Generator.java: Generator.mod
+	@/bin/rm -f Generator.nlx Generator.java
+	java lx.src.NPPP -nocomments < Generator.mod > Generator.nlx
+	java npp.src.NPP -nocomments < Generator.nlx > Generator.java
+IJpair.java: IJpair.mod
+	@/bin/rm -f IJpair.nlx IJpair.java
+	java lx.src.NPPP -nocomments < IJpair.mod > IJpair.nlx
+	java npp.src.NPP -nocomments < IJpair.nlx > IJpair.java
+Illumination.java: Illumination.mod
+	@/bin/rm -f Illumination.nlx Illumination.java
+	java lx.src.NPPP -nocomments < Illumination.mod > Illumination.nlx
+	java npp.src.NPP -nocomments < Illumination.nlx > Illumination.java
+Illuminations.java: Illuminations.mod
+	@/bin/rm -f Illuminations.nlx Illuminations.java
+	java lx.src.NPPP -nocomments < Illuminations.mod > Illuminations.nlx
+	java npp.src.NPP -nocomments < Illuminations.nlx > Illuminations.java
+LC.java: LC.mod
+	@/bin/rm -f LC.nlx LC.java
+	java lx.src.NPPP -nocomments < LC.mod > LC.nlx
+	java npp.src.NPP -nocomments < LC.nlx > LC.java
+LIP.java: LIP.mod
+	@/bin/rm -f LIP.nlx LIP.java
+	java lx.src.NPPP -nocomments < LIP.mod > LIP.nlx
+	java npp.src.NPP -nocomments < LIP.nlx > LIP.java
+Lat.java: Lat.mod
+	@/bin/rm -f Lat.nlx Lat.java
+	java lx.src.NPPP -nocomments < Lat.mod > Lat.nlx
+	java npp.src.NPP -nocomments < Lat.nlx > Lat.java
+Med.java: Med.mod
+	@/bin/rm -f Med.nlx Med.java
+	java lx.src.NPPP -nocomments < Med.mod > Med.nlx
+	java npp.src.NPP -nocomments < Med.nlx > Med.java
+MedBulk.java: MedBulk.mod
+	@/bin/rm -f MedBulk.nlx MedBulk.java
+	java lx.src.NPPP -nocomments < MedBulk.mod > MedBulk.nlx
+	java npp.src.NPP -nocomments < MedBulk.nlx > MedBulk.java
+PFC.java: PFC.mod
+	@/bin/rm -f PFC.nlx PFC.java
+	java lx.src.NPPP -nocomments < PFC.mod > PFC.nlx
+	java npp.src.NPP -nocomments < PFC.nlx > PFC.java
+PFCfovea.java: PFCfovea.mod
+	@/bin/rm -f PFCfovea.nlx PFCfovea.java
+	java lx.src.NPPP -nocomments < PFCfovea.mod > PFCfovea.nlx
+	java npp.src.NPP -nocomments < PFCfovea.nlx > PFCfovea.java
+PFCgo.java: PFCgo.mod
+	@/bin/rm -f PFCgo.nlx PFCgo.java
+	java lx.src.NPPP -nocomments < PFCgo.mod > PFCgo.nlx
+	java npp.src.NPP -nocomments < PFCgo.nlx > PFCgo.java
+PFCmem.java: PFCmem.mod
+	@/bin/rm -f PFCmem.nlx PFCmem.java
+	java lx.src.NPPP -nocomments < PFCmem.mod > PFCmem.nlx
+	java npp.src.NPP -nocomments < PFCmem.nlx > PFCmem.java
+PFCseq.java: PFCseq.mod
+	@/bin/rm -f PFCseq.nlx PFCseq.java
+	java lx.src.NPPP -nocomments < PFCseq.mod > PFCseq.nlx
+	java npp.src.NPP -nocomments < PFCseq.nlx > PFCseq.java
+RNMEDinh.java: RNMEDinh.mod
+	@/bin/rm -f RNMEDinh.nlx RNMEDinh.java
+	java lx.src.NPPP -nocomments < RNMEDinh.mod > RNMEDinh.nlx
+	java npp.src.NPP -nocomments < RNMEDinh.nlx > RNMEDinh.java
+SC.java: SC.mod
+	@/bin/rm -f SC.nlx SC.java
+	java lx.src.NPPP -nocomments < SC.mod > SC.nlx
+	java npp.src.NPP -nocomments < SC.nlx > SC.java
+SCbu.java: SCbu.mod
+	@/bin/rm -f SCbu.nlx SCbu.java
+	java lx.src.NPPP -nocomments < SCbu.mod > SCbu.nlx
+	java npp.src.NPP -nocomments < SCbu.nlx > SCbu.java
+SCqv.java: SCqv.mod
+	@/bin/rm -f SCqv.nlx SCqv.java
+	java lx.src.NPPP -nocomments < SCqv.mod > SCqv.nlx
+	java npp.src.NPP -nocomments < SCqv.nlx > SCqv.java
+SCsac.java: SCsac.mod
+	@/bin/rm -f SCsac.nlx SCsac.java
+	java lx.src.NPPP -nocomments < SCsac.mod > SCsac.nlx
+	java npp.src.NPP -nocomments < SCsac.nlx > SCsac.java
+SNC.java: SNC.mod
+	@/bin/rm -f SNC.nlx SNC.java
+	java lx.src.NPPP -nocomments < SNC.mod > SNC.nlx
+	java npp.src.NPP -nocomments < SNC.nlx > SNC.java
+SNRlatburst.java: SNRlatburst.mod
+	@/bin/rm -f SNRlatburst.nlx SNRlatburst.java
+	java lx.src.NPPP -nocomments < SNRlatburst.mod > SNRlatburst.nlx
+	java npp.src.NPP -nocomments < SNRlatburst.nlx > SNRlatburst.java
+SNRmedburst.java: SNRmedburst.mod
+	@/bin/rm -f SNRmedburst.nlx SNRmedburst.java
+	java lx.src.NPPP -nocomments < SNRmedburst.mod > SNRmedburst.nlx
+	java npp.src.NPP -nocomments < SNRmedburst.nlx > SNRmedburst.java
+STNlatburst.java: STNlatburst.mod
+	@/bin/rm -f STNlatburst.nlx STNlatburst.java
+	java lx.src.NPPP -nocomments < STNlatburst.mod > STNlatburst.nlx
+	java npp.src.NPP -nocomments < STNlatburst.nlx > STNlatburst.java
+STNmedburst.java: STNmedburst.mod
+	@/bin/rm -f STNmedburst.nlx STNmedburst.java
+	java lx.src.NPPP -nocomments < STNmedburst.mod > STNmedburst.nlx
+	java npp.src.NPP -nocomments < STNmedburst.nlx > STNmedburst.java
+SetMappingParamDialog.java: SetMappingParamDialog.mod
+	@/bin/rm -f SetMappingParamDialog.nlx SetMappingParamDialog.java
+	java lx.src.NPPP -nocomments < SetMappingParamDialog.mod > SetMappingParamDialog.nlx
+	java npp.src.NPP -nocomments < SetMappingParamDialog.nlx > SetMappingParamDialog.java
+SubData.java: SubData.mod
+	@/bin/rm -f SubData.nlx SubData.java
+	java lx.src.NPPP -nocomments < SubData.mod > SubData.nlx
+	java npp.src.NPP -nocomments < SubData.nlx > SubData.java
+Target.java: Target.mod
+	@/bin/rm -f Target.nlx Target.java
+	java lx.src.NPPP -nocomments < Target.mod > Target.nlx
+	java npp.src.NPP -nocomments < Target.nlx > Target.java
+ThFEFmem.java: ThFEFmem.mod
+	@/bin/rm -f ThFEFmem.nlx ThFEFmem.java
+	java lx.src.NPPP -nocomments < ThFEFmem.mod > ThFEFmem.nlx
+	java npp.src.NPP -nocomments < ThFEFmem.nlx > ThFEFmem.java
+ThLIPmem.java: ThLIPmem.mod
+	@/bin/rm -f ThLIPmem.nlx ThLIPmem.java
+	java lx.src.NPPP -nocomments < ThLIPmem.mod > ThLIPmem.nlx
+	java npp.src.NPP -nocomments < ThLIPmem.nlx > ThLIPmem.java
+ThMEDlcn.java: ThMEDlcn.mod
+	@/bin/rm -f ThMEDlcn.nlx ThMEDlcn.java
+	java lx.src.NPPP -nocomments < ThMEDlcn.mod > ThMEDlcn.nlx
+	java npp.src.NPP -nocomments < ThMEDlcn.nlx > ThMEDlcn.java
+ThPFCmem.java: ThPFCmem.mod
+	@/bin/rm -f ThPFCmem.nlx ThPFCmem.java
+	java lx.src.NPPP -nocomments < ThPFCmem.mod > ThPFCmem.nlx
+	java npp.src.NPP -nocomments < ThPFCmem.nlx > ThPFCmem.java
+Thal.java: Thal.mod
+	@/bin/rm -f Thal.nlx Thal.java
+	java lx.src.NPPP -nocomments < Thal.mod > Thal.nlx
+	java npp.src.NPP -nocomments < Thal.nlx > Thal.java
+VISINPUT.java: VISINPUT.mod
+	@/bin/rm -f VISINPUT.nlx VISINPUT.java
+	java lx.src.NPPP -nocomments < VISINPUT.mod > VISINPUT.nlx
+	java npp.src.NPP -nocomments < VISINPUT.nlx > VISINPUT.java
+clean:
+	@/bin/rm -f AddElementToLearnDialog.java
+	@/bin/rm -f AddElementToLearnDialog.nlx
+	@/bin/rm -f BSG.java
+	@/bin/rm -f BSG.nlx
+	@/bin/rm -f CDlatburst.java
+	@/bin/rm -f CDlatburst.nlx
+	@/bin/rm -f CDlatinh.java
+	@/bin/rm -f CDlatinh.nlx
+	@/bin/rm -f CDlattan.java
+	@/bin/rm -f CDlattan.nlx
+	@/bin/rm -f CDmedburst.java
+	@/bin/rm -f CDmedburst.nlx
+	@/bin/rm -f CDmedinh.java
+	@/bin/rm -f CDmedinh.nlx
+	@/bin/rm -f CDmedtan.java
+	@/bin/rm -f CDmedtan.nlx
+	@/bin/rm -f CrowleyFrame.java
+	@/bin/rm -f CrowleyFrame.nlx
+	@/bin/rm -f CrowleyHelp.java
+	@/bin/rm -f CrowleyHelp.nlx
+	@/bin/rm -f CrowleyOut.java
+	@/bin/rm -f CrowleyOut.nlx
+	@/bin/rm -f CrowleyParams.java
+	@/bin/rm -f CrowleyParams.nlx
+	@/bin/rm -f CrowleyTop.java
+	@/bin/rm -f CrowleyTop.nlx
+	@/bin/rm -f DoubleSaccade.java
+	@/bin/rm -f DoubleSaccade.nlx
+	@/bin/rm -f Element.java
+	@/bin/rm -f Element.nlx
+	@/bin/rm -f EventForm.java
+	@/bin/rm -f EventForm.nlx
+	@/bin/rm -f ExperimentInterface.java
+	@/bin/rm -f ExperimentInterface.nlx
+	@/bin/rm -f FEF.java
+	@/bin/rm -f FEF.nlx
+	@/bin/rm -f Func.java
+	@/bin/rm -f Func.nlx
+	@/bin/rm -f GPElatburst.java
+	@/bin/rm -f GPElatburst.nlx
+	@/bin/rm -f GPEmedburst.java
+	@/bin/rm -f GPEmedburst.nlx
+	@/bin/rm -f Generator.java
+	@/bin/rm -f Generator.nlx
+	@/bin/rm -f IJpair.java
+	@/bin/rm -f IJpair.nlx
+	@/bin/rm -f Illumination.java
+	@/bin/rm -f Illumination.nlx
+	@/bin/rm -f Illuminations.java
+	@/bin/rm -f Illuminations.nlx
+	@/bin/rm -f LC.java
+	@/bin/rm -f LC.nlx
+	@/bin/rm -f LIP.java
+	@/bin/rm -f LIP.nlx
+	@/bin/rm -f Lat.java
+	@/bin/rm -f Lat.nlx
+	@/bin/rm -f Med.java
+	@/bin/rm -f Med.nlx
+	@/bin/rm -f MedBulk.java
+	@/bin/rm -f MedBulk.nlx
+	@/bin/rm -f PFC.java
+	@/bin/rm -f PFC.nlx
+	@/bin/rm -f PFCfovea.java
+	@/bin/rm -f PFCfovea.nlx
+	@/bin/rm -f PFCgo.java
+	@/bin/rm -f PFCgo.nlx
+	@/bin/rm -f PFCmem.java
+	@/bin/rm -f PFCmem.nlx
+	@/bin/rm -f PFCseq.java
+	@/bin/rm -f PFCseq.nlx
+	@/bin/rm -f RNMEDinh.java
+	@/bin/rm -f RNMEDinh.nlx
+	@/bin/rm -f SC.java
+	@/bin/rm -f SC.nlx
+	@/bin/rm -f SCbu.java
+	@/bin/rm -f SCbu.nlx
+	@/bin/rm -f SCqv.java
+	@/bin/rm -f SCqv.nlx
+	@/bin/rm -f SCsac.java
+	@/bin/rm -f SCsac.nlx
+	@/bin/rm -f SNC.java
+	@/bin/rm -f SNC.nlx
+	@/bin/rm -f SNRlatburst.java
+	@/bin/rm -f SNRlatburst.nlx
+	@/bin/rm -f SNRmedburst.java
+	@/bin/rm -f SNRmedburst.nlx
+	@/bin/rm -f STNlatburst.java
+	@/bin/rm -f STNlatburst.nlx
+	@/bin/rm -f STNmedburst.java
+	@/bin/rm -f STNmedburst.nlx
+	@/bin/rm -f SetMappingParamDialog.java
+	@/bin/rm -f SetMappingParamDialog.nlx
+	@/bin/rm -f SubData.java
+	@/bin/rm -f SubData.nlx
+	@/bin/rm -f Target.java
+	@/bin/rm -f Target.nlx
+	@/bin/rm -f ThFEFmem.java
+	@/bin/rm -f ThFEFmem.nlx
+	@/bin/rm -f ThLIPmem.java
+	@/bin/rm -f ThLIPmem.nlx
+	@/bin/rm -f ThMEDlcn.java
+	@/bin/rm -f ThMEDlcn.nlx
+	@/bin/rm -f ThPFCmem.java
+	@/bin/rm -f ThPFCmem.nlx
+	@/bin/rm -f Thal.java
+	@/bin/rm -f Thal.nlx
+	@/bin/rm -f VISINPUT.java
+	@/bin/rm -f VISINPUT.nlx

@@ -1,0 +1,29 @@
+h27275
+s 00017/00000/00000
+d D 1.1 99/09/24 19:12:50 aalx 1 0
+c date and time created 99/09/24 19:12:50 by aalx
+e
+u
+U
+f e 0
+t
+T
+I 1
+# SCCS %W% -- %G% --%U%
+#
+# Dart model
+#
+
+proc nslMain {protocol} {
+ 
+    nsl set system.protocol $protocol
+     	
+    puts "Training and Run model"
+    nsl trainAndRunAll
+ 
+}
+
+# protocols: { basic, transfer, calibration }.
+
+nslMain calibration
+E 1

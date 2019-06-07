@@ -1,0 +1,29 @@
+
+nslImport BasicBookModels\Ulayer\1_1_1\src\*;
+nslImport BasicBookModels\Vlayer\1_1_1\src\*;
+
+nslModule MaxSelector(int size){
+
+//NSL Version: 3_0_n
+//Sif Version: 6
+//libNickName: booklib
+//moduleName:  MaxSelector
+//versionName: 1_1_1
+//floatSubModules: true
+
+
+//variables 
+public Ulayer u1(size); // This is the main module within the model
+public Vlayer v1(); // 
+public NslDinDouble1 in(size); // 
+public NslDoutDouble0 out(size); // 
+
+//methods 
+public void makeConn(){
+    nslRelabel(in,u1.s_in);
+    nslConnect(v1.vf,u1.v_in);
+    nslConnect(u1.uf,v1.u_in);
+    nslRelabel(u1.uf,out);
+}
+}//end MaxSelector
+
