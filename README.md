@@ -37,11 +37,14 @@ To uninstall NSL at any time:
 1.  Remove the `NSL3_0_s` folder.
 
 2.  Remove the following environment variables:
-        NSLJ_ROOT
-        NSL_OS
-        NSL_SIM
-        CLASSPATH
+```
+NSLJ_ROOT
+NSL_OS
+NSL_SIM
+CLASSPATH
+```
 
 3. Remove the following entries from the PATH environment variable:
-        %NSLJ_ROOT%\nslj\bin
-        %NSLJ_ROOT%\nslc\bin
+```
+%NSLJ_ROOT%\nslj\bin
+```
