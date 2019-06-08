@@ -6,7 +6,7 @@ echo Ensure to add the following to PATH manually after this is done:
 echo "%JAVA_HOME%\bin;%NSLJ_ROOT%\nslj\bin;%NSLJ_ROOT%\nslc\bin"
 echo.
 
-setx NSLJ_ROOT as "C:\Program Files\NSL3_0_s" /m
+setx NSLJ_ROOT "C:\Program Files\NSL3_0_s" /m
 setx JAVA_HOME "C:\Program Files\Java\<jdk-version>" /m
 setx NSL_OS "nt" /m
 setx NSL_SIM "%NSLJ_ROOT%\nslj\src" /m
