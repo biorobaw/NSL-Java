@@ -15,6 +15,3 @@ out
 .classpath
 .settings
 .project
-
-# Sources list for compiling
-NSL3_0_s/sources.txt
