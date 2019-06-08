@@ -24,7 +24,8 @@ To install NSL after cloning this repository:
     If using OpenJDK, the JDK folder may be stored under the name of your OpenJDK
     vendor like `C:\Program Files\Amazon Corretto\`.
 
-5.  Once the change has been done, double-click on `resume.bat` to set environment variables
+5.  Once the change has been done, right click on `resume.bat` 
+    and run as administrator to set environment variables
     and compile the NSL sources.
 
 6.  Copy the files `SCS_PREFERENCES` and `SCS_LIBRARY_PATHS` to your home folder.

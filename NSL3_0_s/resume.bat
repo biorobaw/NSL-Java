@@ -1,6 +1,8 @@
 @echo off
 
-echo Please ensure the batch file sets JAVA_HOME to the path of your Java installation before continuing!
+echo Please ensure that both the batch file sets JAVA_HOME
+echo to the path of your Java installation and that you are
+echo running this as an Administrator before continuing!
 pause
 
 echo Initializing NSL environment variables
