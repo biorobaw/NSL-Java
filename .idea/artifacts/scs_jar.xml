@@ -1,0 +1,8 @@
+<component name="ArtifactManager">
+  <artifact type="jar" name="scs:jar">
+    <output-path>$PROJECT_DIR$/NSL3_0_s/scs/src/bin</output-path>
+    <root id="archive" name="scs.jar">
+      <element id="module-output" name="nsl" />
+    </root>
+  </artifact>
+</component>
