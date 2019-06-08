@@ -24,9 +24,21 @@ To install NSL after cloning this repository:
     If using OpenJDK, the JDK folder may be stored under the name of your OpenJDK
     vendor like `C:\Program Files\Amazon Corretto\`.
 
-5.  Once the change has been done, right click on `resume.bat` 
+5.  ~~Once the change has been done, right click on `resume.bat` 
     and run as administrator to set environment variables
-    and compile the NSL sources.
+    and compile the NSL sources.~~
+    
+    Due to `resume.bat` being experimental at the moment, it is best to set the
+    system environment variables manually. Add the following variables:
+    (<jdk-version> for JAVA_HOME should match to the one found in step 4)
+```
+NSLJ_ROOT = "C:\Program Files\NSL3_0_s"
+JAVA_HOME = "C:\Program Files\Java\<jdk-version>"
+NSL_OS = "nt"
+NSL_SIM = "%NSLJ_ROOT%\nslj\src"
+CLASSPATH = ".;%NSLJ_ROOT%\nslc\src;%NSLJ_ROOT%;%NSL_SIM%\main;%NSL_SIM%\nsls\jacl;%NSL_SIM%\nsls\tcljava"
+PATH = "%JAVA_HOME%\bin;%NSLJ_ROOT%\nslj\bin;%NSLJ_ROOT%\nslc\bin"
+```
 
 6.  Copy the files `SCS_PREFERENCES` and `SCS_LIBRARY_PATHS` to your home folder.
     The folder to store it in should be `C:\Users\<username>`.
