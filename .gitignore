@@ -1,0 +1,20 @@
+# Binary files
+*.class
+*.jar
+
+# Archive files
+*.zip
+*.tar.gz
+*.rar
+*.7z
+
+# IntelliJ binary output
+out
+
+# Eclipse files
+.classpath
+.settings
+.project
+
+# Sources list for compiling
+NSL3_0_s/sources.txt
