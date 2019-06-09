@@ -40,8 +40,8 @@ class JavaGetInterpCmd implements Command {
 
 public void
 cmdProc(
-    Interp interp,			// Current interpreter.
-    TclObject argv[])			// Argument list.
+        Interp interp,            // Current interpreter.
+        TclObject[] argv)			// Argument list.
 throws
     TclException			// A standard Tcl exception.
 {

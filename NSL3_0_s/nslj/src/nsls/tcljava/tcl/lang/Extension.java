@@ -93,6 +93,7 @@ abstract public class Extension {
  * running Jacl off a web page, reduces download time significantly.
  */
 
+@SuppressWarnings("Duplicates")
 class AutoloadStub implements Command {
     String className;
 
@@ -114,7 +115,7 @@ class AutoloadStub implements Command {
      * @param argv command arguments.
      * @exception TclException if error happens inside the real command proc.
      */
-    public void cmdProc(Interp interp, TclObject argv[]) throws TclException {
+    public void cmdProc(Interp interp, TclObject[] argv) throws TclException {
 	Class cmdClass = null;
 	Command cmd;
 	try {

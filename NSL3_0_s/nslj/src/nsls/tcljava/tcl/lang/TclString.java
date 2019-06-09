@@ -84,7 +84,7 @@ public class TclString extends InternalRep {
      */
 
     static final TclObject newInstance(char c) {
-	char charArray[] = new char[1];
+        char[] charArray = new char[1];
 	charArray[0] = c;
 	return newInstance(new String(charArray));
     }

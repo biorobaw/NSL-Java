@@ -279,7 +279,7 @@ lookupMethod(
 )
     throws TclException
 {
-  Method methods[] = getAllDeclaredMethods(cls);
+    Method[] methods = getAllDeclaredMethods(cls);
   boolean foundSameName = false;
 
 
@@ -291,8 +291,8 @@ lookupMethod(
     }
     
     foundSameName = true;
-    
-    Class pt[] = methods[i].getParameterTypes();
+
+      Class[] pt = methods[i].getParameterTypes();
     if (pt.length != paramTypes.length) {
       continue;
     }
@@ -350,7 +350,7 @@ matchSignature(
 )
     throws TclException
 {
-  Object funcs[];
+    Object[] funcs;
   boolean foundSameName = false;
   Vector match_vector = new Vector();
   int i,j;
@@ -927,7 +927,7 @@ static Method[]
 getAllDeclaredMethods(
     Class cls)				// The class to query.
 {
-    Method methods[] = (Method[])allDeclMethTable.get(cls);
+    Method[] methods = (Method[]) allDeclMethTable.get(cls);
     if (methods != null) {
 	return methods;
     }
@@ -937,7 +937,7 @@ getAllDeclaredMethods(
     for (Class c = cls; c != null; c = c.getSuperclass()) {
 	mergeMethods(c, c.getDeclaredMethods(), vec);
 
-	Class interfaces[] = c.getInterfaces();
+        Class[] interfaces = c.getInterfaces();
 	for (int i = 0; i < interfaces.length; i++) {
 	    mergeMethods(interfaces[i], interfaces[i].getMethods(), vec);
 	}
@@ -971,9 +971,9 @@ getAllDeclaredMethods(
 
 static void 
 mergeMethods(
-    Class c,
-    Method methods[],
-    Vector vec)
+        Class c,
+        Method[] methods,
+        Vector vec)
 {
     for (int i=0; i < methods.length; i++) {
 	boolean sameSigExists = false;
@@ -1037,8 +1037,8 @@ methodSigEqual(
 	return false;
     }
 
-    Class param1[] = method1.getParameterTypes();
-    Class param2[] = method2.getParameterTypes();
+    Class[] param1 = method1.getParameterTypes();
+    Class[] param2 = method2.getParameterTypes();
 
     if (param1.length != param2.length) {
 	return false;

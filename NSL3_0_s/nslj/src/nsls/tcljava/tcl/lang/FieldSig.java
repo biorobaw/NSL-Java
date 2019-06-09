@@ -152,7 +152,7 @@ throws
 		signature + "\"");
     }
 
-    fieldName = TclList.index(interp, signature, 0).toString();
+    fieldName = Objects.requireNonNull(TclList.index(interp, signature, 0)).toString();
     sigClsObj = TclList.index(interp, signature, 1);
 
     if (sigClsObj != null) {

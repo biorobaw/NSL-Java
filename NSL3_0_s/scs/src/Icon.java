@@ -623,47 +623,47 @@ class Icon extends Component {
             pw.print("0");  // zero
             pw.print("\n");
             pw.print("xmax: ");
-            pw.print((new Integer(xmax - xmin)).toString());  // this use to be xdelta=xmax-xmin
+            pw.print((Integer.valueOf(xmax - xmin)).toString());  // this use to be xdelta=xmax-xmin
             pw.print("\n");
             pw.print("ymax: ");
-            pw.print((new Integer(ymax - ymin)).toString());  // this use to be ydelta=ymax-ymin
+            pw.print((Integer.valueOf(ymax - ymin)).toString());  // this use to be ydelta=ymax-ymin
             pw.print("\n");
             pw.print("shapexmindelta: ");
-            pw.print((new Integer(shapexmin - xmin)).toString());
+            pw.print((Integer.valueOf(shapexmin - xmin)).toString());
             pw.print("\n");
             pw.print("shapeymindelta: ");
-            pw.print((new Integer(shapeymin - ymin)).toString());
+            pw.print((Integer.valueOf(shapeymin - ymin)).toString());
             pw.print("\n");
             pw.print("shapexmaxdelta: ");
-            pw.print((new Integer(shapexmax - xmin)).toString());
+            pw.print((Integer.valueOf(shapexmax - xmin)).toString());
             pw.print("\n");
             pw.print("shapeymaxdelta: ");
-            pw.print((new Integer(shapeymax - ymin)).toString());
+            pw.print((Integer.valueOf(shapeymax - ymin)).toString());
             pw.print("\n");
         } else {
             pw.print("xmin: ");
-            pw.print((new Integer(xmin)).toString());  //
+            pw.print((Integer.valueOf(xmin)).toString());  //
             pw.print("\n");
             pw.print("ymin: ");
-            pw.print((new Integer(ymin)).toString());  //
+            pw.print((Integer.valueOf(ymin)).toString());  //
             pw.print("\n");
             pw.print("xmax: ");
-            pw.print((new Integer(xmax)).toString());  // this use to be xdelta=xmax-xmin
+            pw.print((Integer.valueOf(xmax)).toString());  // this use to be xdelta=xmax-xmin
             pw.print("\n");
             pw.print("ymax: ");
-            pw.print((new Integer(ymax)).toString());  // this use to be ydelta=ymax-ymin
+            pw.print((Integer.valueOf(ymax)).toString());  // this use to be ydelta=ymax-ymin
             pw.print("\n");
             pw.print("shapexmindelta: ");
-            pw.print((new Integer(shapexmin)).toString());
+            pw.print((Integer.valueOf(shapexmin)).toString());
             pw.print("\n");
             pw.print("shapeymindelta: ");
-            pw.print((new Integer(shapeymin)).toString());
+            pw.print((Integer.valueOf(shapeymin)).toString());
             pw.print("\n");
             pw.print("shapexmaxdelta: ");
-            pw.print((new Integer(shapexmax)).toString());
+            pw.print((Integer.valueOf(shapexmax)).toString());
             pw.print("\n");
             pw.print("shapeymaxdelta: ");
-            pw.print((new Integer(shapeymax)).toString());
+            pw.print((Integer.valueOf(shapeymax)).toString());
             pw.print("\n");
         }
         //System.out.println("Debug:Icon:write: xdelta "+xdelta+" ydelta "+ydelta);
@@ -675,7 +675,7 @@ class Icon extends Component {
             pw.print("0");
             pw.print("\n");
         } else {
-            pw.print((new Integer(drawableParts.size())).toString());
+            pw.print((Integer.valueOf(drawableParts.size())).toString());
             pw.print("\n");
             // drawable parts are always moved to 0,0
             for (ix = 0; ix < drawableParts.size(); ix++) {

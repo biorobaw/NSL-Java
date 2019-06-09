@@ -46,8 +46,8 @@ private static final String nullRep = "java0x0";
 
 public void
 cmdProc(
-    Interp interp,			// Current interpreter.
-    TclObject argv[])			// Argument list.
+        Interp interp,            // Current interpreter.
+        TclObject[] argv)			// Argument list.
 {
     interp.setResult(nullRep);
 }

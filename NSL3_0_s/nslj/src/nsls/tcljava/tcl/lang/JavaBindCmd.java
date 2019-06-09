@@ -43,7 +43,7 @@ BeanEventMgr eventMgr = null;
  * Java class.
  */
 
-private Hashtable beanInfoCache = new Hashtable();
+private Hashtable<Class, BeanInfo> beanInfoCache = new Hashtable<>();
 
 
 /*
@@ -67,7 +67,7 @@ private Hashtable beanInfoCache = new Hashtable();
 public void
 cmdProc(
     Interp interp,		// Current interpreter.
-    TclObject argv[])		// Argument list.
+	TclObject[] argv)		// Argument list.
 throws 
     TclException 		// A standard Tcl exception.
 {
@@ -93,7 +93,7 @@ throws
 	EventSetDescriptor eventDesc;
 	Method method;
 
-	Object arr[] = getEventMethod(interp, obj, argv[2].toString());
+		Object[] arr = getEventMethod(interp, obj, argv[2].toString());
 	eventDesc = (EventSetDescriptor)arr[0];
 
 	if (!eventDesc.getListenerType().isInterface()) {
@@ -170,7 +170,7 @@ throws
 
 	try {
 	    Class cls = obj.getClass();
-	    beanInfo = (BeanInfo)beanInfoCache.get(cls);
+	    beanInfo = beanInfoCache.get(cls);
 	    if (beanInfo == null) {
 		beanInfo = Introspector.getBeanInfo(cls);
 		beanInfoCache.put(cls, beanInfo);
@@ -179,7 +179,7 @@ throws
 	} catch (IntrospectionException e) {
 	    break search;
 	}
-	EventSetDescriptor events[] = beanInfo.getEventSetDescriptors();
+		EventSetDescriptor[] events = beanInfo.getEventSetDescriptors();
 
 	if (events == null) {
 	    break search;
@@ -194,7 +194,7 @@ throws
 	     */
 
 	    for (i = 0; i < events.length; i++) {
-		Method methods[] = events[i].getListenerType().getMethods();
+			Method[] methods = events[i].getListenerType().getMethods();
 		for (int j=0; j < methods.length; j++) {
 		    if (methods[j].getName().equals(eventName)) {
 			if (method == null) {
@@ -223,7 +223,7 @@ throws
 		break search;
 	    }
 
-	    Method methods[] = eventDesc.getListenerType().getMethods();
+		Method[] methods = eventDesc.getListenerType().getMethods();
 
 	    if (methods == null) {
 		break search;
@@ -237,7 +237,7 @@ throws
 	}
 
 	if (method != null) {
-	    Object arr[] = new Object[2];
+		Object[] arr = new Object[2];
 	    arr[0] = eventDesc;
 	    arr[1] = method;
 	    return arr;

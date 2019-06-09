@@ -477,7 +477,7 @@ public class OptionsFrame extends Dialog
         inPortFill_col = SCSUtility.returnCol(inPortFillColChoice.getSelectedItem());
         outPortFill_col = SCSUtility.returnCol(outPortFillColChoice.getSelectedItem());
         connection_col = SCSUtility.returnCol(connectionColChoice.getSelectedItem());
-        connectionWidth = new Integer(connectionWidthChoice.getSelectedItem());
+        connectionWidth = Integer.valueOf(connectionWidthChoice.getSelectedItem());
         line_col = SCSUtility.returnCol(lineColChoice.getSelectedItem());
         poly_col = SCSUtility.returnCol(polyColChoice.getSelectedItem());
         rect_col = SCSUtility.returnCol(rectColChoice.getSelectedItem());
@@ -486,20 +486,20 @@ public class OptionsFrame extends Dialog
         freeText_col = SCSUtility.returnCol(freeTextColChoice.getSelectedItem());
         freeTextFontName = freeTextFontNameChoice.getSelectedItem();
 
-        freeTextSize = new Integer(freeTextSizeChoice.getSelectedItem());
+        freeTextSize = Integer.valueOf(freeTextSizeChoice.getSelectedItem());
 
         freeTextFont = new Font(freeTextFontName, Font.BOLD, freeTextSize);
 
         moduleText_col = SCSUtility.returnCol(moduleTextColChoice.getSelectedItem());
         moduleTextFontName = moduleTextFontNameChoice.getSelectedItem();
-        moduleTextSize = new Integer(moduleTextSizeChoice.getSelectedItem());
+        moduleTextSize = Integer.valueOf(moduleTextSizeChoice.getSelectedItem());
         moduleTextFont = new Font(moduleTextFontName, Font.BOLD, moduleTextSize);
         moduleTextLocation = moduleTextLocationChoice.getSelectedItem();
         //"CENTER", ABOVE, BELOW, RIGHT, LEFT of instance icon
 
         instanceText_col = SCSUtility.returnCol(instanceTextColChoice.getSelectedItem());
         instanceTextFontName = instanceTextFontNameChoice.getSelectedItem();
-        instanceTextSize = new Integer(instanceTextSizeChoice.getSelectedItem());
+        instanceTextSize = Integer.valueOf(instanceTextSizeChoice.getSelectedItem());
         instanceTextFont = new Font(instanceTextFontName, Font.BOLD, instanceTextSize);
         instanceTextLocation = instanceTextLocationChoice.getSelectedItem();
         //"BELOW", CENTER, ABOVE, BELOW, RIGHT, LEFT of instance icon

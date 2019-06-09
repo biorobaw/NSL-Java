@@ -27,7 +27,7 @@ public interface Command {
     abstract public void 
     cmdProc(			// The method cmdProc is called by interp.
 	Interp interp, 		// The interpreter for setting result etc.
-	TclObject argv[])	// The argument list for the command.
+                        TclObject[] argv)	// The argument list for the command.
     throws 
 	TclException;		// Tcl exceptions are thown for Tcl errors.
 }

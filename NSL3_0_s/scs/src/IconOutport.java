@@ -431,17 +431,17 @@ class IconOutport extends GraphicPart_line {
         pw.print(parameters);
         pw.print("\n");
         pw.print("direction: ");
-        pw.print((new Character(direction)).toString());
+        pw.print((Character.valueOf(direction)).toString());
         pw.print("\n");
         pw.print("signalType: ");
-        pw.print((new Character(signalType)).toString());
+        pw.print((Character.valueOf(signalType)).toString());
         pw.print("\n");
 
         if (links != null) {
             for (int ix = 0; ix < links.size(); ix++) {
                 Connection conn = links.elementAt(ix);
                 pw.print("link num: ");
-                pw.print((new Integer(ix)).toString());
+                pw.print((Integer.valueOf(ix)).toString());
                 pw.print("\n");
                 conn.writeAllChars(pw);
                 pw.print("\n");

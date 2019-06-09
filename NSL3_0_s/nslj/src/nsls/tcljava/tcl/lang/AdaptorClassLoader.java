@@ -86,8 +86,8 @@ loadEventAdaptor(
 				// to generate an adaptor for.
 {
     String classToGen = getNewClassName();
-    byte classData[] = adaptorGen.generate(desc, EventAdaptor.class,
-	    classToGen);
+    byte[] classData = adaptorGen.generate(desc, EventAdaptor.class,
+            classToGen);
     Class cls = defineClass(classToGen, classData, 0, classData.length);
     resolveClass(cls);
 

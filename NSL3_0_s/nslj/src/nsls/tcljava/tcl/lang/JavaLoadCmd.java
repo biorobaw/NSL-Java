@@ -22,7 +22,7 @@ class JavaLoadCmd implements Command {
  * List of switches that are legal in the lsort command.
  */
 
-private static final String validOpts[] = {"-classpath"};
+    private static final String[] validOpts = {"-classpath"};
 
 
 /*
@@ -44,8 +44,8 @@ private static final String validOpts[] = {"-classpath"};
 
 public void
 cmdProc(
-    Interp interp,      // the current interpreter.
-    TclObject argv[])   // command arguments.
+        Interp interp,      // the current interpreter.
+        TclObject[] argv)   // command arguments.
 throws
     TclException        // if the package cannot be loaded.
 {

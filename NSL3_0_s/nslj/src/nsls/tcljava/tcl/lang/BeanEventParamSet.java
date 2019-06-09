@@ -28,13 +28,13 @@ class BeanEventParamSet {
  * The types of the parameters.
  */
 
-Class paramTypes[];
+    Class[] paramTypes;
 
 /*
  * The parameters to the event method that has been fired.
  */
 
-Object params[];
+    Object[] params;
 
 
 /*
@@ -52,8 +52,8 @@ Object params[];
 
 
 BeanEventParamSet(
-    Class t[],		// Initial value for paramTypes.
-    Object p[])		// Initial value for params.
+        Class[] t,        // Initial value for paramTypes.
+        Object[] p)		// Initial value for params.
 {
     paramTypes = t;
     params = p;

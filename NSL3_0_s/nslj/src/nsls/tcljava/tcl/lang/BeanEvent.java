@@ -39,13 +39,13 @@ TclObject command;
  * Types of the event parameters.
  */
 
-Class paramTypes[];
+    Class[] paramTypes;
 
 /*
  * The parameters for the event.
  */
 
-Object params[];
+    Object[] params;
 
 /*
  * If an Exception is throws during the execution of the callback
@@ -68,10 +68,10 @@ Throwable exception;
  */
 
 BeanEvent(
-    Interp i,		// Interpreter to execute the callback command.
-    Class t[],		// Types of the event parameters.
-    Object p[],		// Parameters for this event.
-    TclObject cmd)	// The callback command.
+        Interp i,        // Interpreter to execute the callback command.
+        Class[] t,        // Types of the event parameters.
+        Object[] p,        // Parameters for this event.
+        TclObject cmd)	// The callback command.
 {
     interp = i;
     command = cmd;

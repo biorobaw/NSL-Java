@@ -412,10 +412,10 @@ class IconInport extends GraphicPart_line {
         pw.print(parameters);
         pw.print("\n");
         pw.print("direction: ");
-        pw.print((new Character(direction)).toString());
+        pw.print((Character.valueOf(direction)).toString());
         pw.print("\n");
         pw.print("signalType: ");
-        pw.print((new Character(signalType)).toString());
+        pw.print(( Character.valueOf(signalType)).toString());
         pw.print("\n");
 
         if (link != null) {

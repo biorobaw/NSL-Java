@@ -410,13 +410,13 @@ public class GraphicPart_text extends GraphicPart {
 //	  os.writeObject(new Font("Monospaced", Font.PLAIN , 12));
         pw.print(textString);
         pw.print("x0 y0 x1 y1: ");
-        pw.print((new Integer(x0 - x)).toString());
+        pw.print((Integer.valueOf(x0 - x)).toString());
         pw.print(" ");
-        pw.print((new Integer(y0 - y)).toString());
+        pw.print((Integer.valueOf(y0 - y)).toString());
         pw.print(" ");
-        pw.print((new Integer(x1 - x)).toString());
+        pw.print((Integer.valueOf(x1 - x)).toString());
         pw.print(" ");
-        pw.print((new Integer(y1 - y)).toString());
+        pw.print((Integer.valueOf(y1 - y)).toString());
         pw.print("\n ");
 
     }

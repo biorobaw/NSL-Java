@@ -136,7 +136,7 @@ throws
 
     Method method = eventDesc.getAddListenerMethod();
     if (method != null) {
-	Object args[] = new Object[1];
+        Object[] args = new Object[1];
 	args[0] = this;
 
 	try {
@@ -222,7 +222,7 @@ throws
 	try {
 	    Method method = eventDesc.getRemoveListenerMethod();
 	    if (method != null) {
-		Object args[] = new Object[1];
+            Object[] args = new Object[1];
 		args[0] = this;
 
 		method.invoke(source, args);
@@ -322,8 +322,8 @@ getHandledEvents(
 
 public final void
 _processEvent(
-    Object params[],		// Event object associated with this event.
-    String eventName)		// Name of the event.
+        Object[] params,        // Event object associated with this event.
+        String eventName)		// Name of the event.
 throws
     Throwable	
 {
@@ -332,8 +332,8 @@ throws
 
     TclObject cmd = (TclObject)callbacks.get(eventName);
     if (cmd != null) {
-	Class paramTypes[] = null;
-	Method methods[] = eventDesc.getListenerType().getMethods();
+        Class[] paramTypes = null;
+        Method[] methods = eventDesc.getListenerType().getMethods();
 	for (int i = 0; i < methods.length; i++) {
 	    if (methods[i].getName().equals(eventName)) {
 		paramTypes = methods[i].getParameterTypes();

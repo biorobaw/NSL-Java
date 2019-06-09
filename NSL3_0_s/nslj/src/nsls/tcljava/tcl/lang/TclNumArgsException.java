@@ -39,8 +39,8 @@ public class TclNumArgsException extends TclException {
      * @exception TclException is always thrown.
      */
 
-     public TclNumArgsException(Interp interp, int argc, 
-	     TclObject argv[], String message)
+     public TclNumArgsException(Interp interp, int argc,
+                                TclObject[] argv, String message)
 	     throws TclException
     {
 	super(TCL.ERROR);

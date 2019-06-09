@@ -176,13 +176,13 @@ public class GraphicPart extends Component {
      */
     public void writeAllChars(PrintWriter pw, int x, int y) {
         pw.print("xmin ymin xmax ymax: ");
-        pw.print((new Integer(xmin - x)).toString());
+        pw.print((Integer.valueOf(xmin - x)).toString());
         pw.print(" ");
-        pw.print((new Integer(ymin - y)).toString());
+        pw.print((Integer.valueOf(ymin - y)).toString());
         pw.print(" ");
-        pw.print((new Integer(xmax - x)).toString());
+        pw.print((Integer.valueOf(xmax - x)).toString());
         pw.print(" ");
-        pw.print((new Integer(ymax - y)).toString());
+        pw.print((Integer.valueOf(ymax - y)).toString());
         pw.print("\n");
     }
 //------------------------------------------------------------------

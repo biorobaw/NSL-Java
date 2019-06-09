@@ -27,12 +27,12 @@ public class TclIndex extends InternalRep {
      * Table of valid options.
      */
 
-    private String table[];
+    private String[] table;
 
     /**
      * Construct a TclIndex representation with the given index & table.
      */
-    private TclIndex(int i, String tab[]) {
+    private TclIndex(int i, String[] tab) {
 	index = i;
 	table = tab;
     }
@@ -68,8 +68,8 @@ public class TclIndex extends InternalRep {
      * @paran flags may be TCL.EXACT.
      */
 
-    public static int get(Interp interp, TclObject tobj, String table[],
-	    String msg, int flags) throws TclException {
+    public static int get(Interp interp, TclObject tobj, String[] table,
+                          String msg, int flags) throws TclException {
 	InternalRep rep = tobj.getInternalRep();
 
 	if (rep instanceof TclIndex) {

@@ -572,16 +572,16 @@ public IconInst findAnotherIconInst(IconInst iconInst) {
             }
         }
         pw.print("Num Drawable Objs: "); //  write down the num of icons
-        pw.print((new Integer(drawableObjs.size())).toString()); //  write down the num of drawableObjs
+        pw.print((Integer.valueOf(drawableObjs.size())).toString()); //  write down the num of drawableObjs
         pw.print("\n"); //
         pw.print("Num Drawable Components: "); //
-        pw.print((new Integer(compCount)).toString()); //
+        pw.print((Integer.valueOf(compCount)).toString()); //
         pw.print("\n"); //
 
         if (drawableObjs != null) {
             for (int i = 0; i < drawableObjs.size(); i++) {
                 pw.print("DrawableObj Num: "); //  write down type of port
-                pw.print((new Integer(i)).toString());
+                pw.print((Integer.valueOf(i)).toString());
                 pw.print("\n");
                 Component comp = (Component) drawableObjs.elementAt(i);
 
@@ -616,7 +616,7 @@ public IconInst findAnotherIconInst(IconInst iconInst) {
             pw.print("0");
             pw.print("\n"); //  write down type of connections
         } else {
-            pw.print((new Integer(drawableObjs.size() - compCount)).toString()); //  write down the num of drawableObjs
+            pw.print((Integer.valueOf(drawableObjs.size() - compCount)).toString()); //  write down the num of drawableObjs
             pw.print("\n"); //  write down type of connections
 
             for (int i = 0; i < drawableObjs.size(); i++) {
@@ -624,7 +624,7 @@ public IconInst findAnotherIconInst(IconInst iconInst) {
                 if (comp instanceof Connection) {
                     pw.print("\n");
                     pw.print("Connection Num:");
-                    pw.print((new Integer(i)).toString());
+                    pw.print((Integer.valueOf(i)).toString());
                     pw.print("\n");
                     Connection conn = (Connection) comp;
                     conn.writeAllChars(pw);
@@ -671,7 +671,7 @@ public IconInst findAnotherIconInst(IconInst iconInst) {
                         if (((IconOutport) icon_comp).Name.
                                 equals(conn.src_port.Name)) {
                             pw.print("pin num: ");
-                            pw.print((new Integer(j)).toString()); //  write down the num of drawableObjs
+                            pw.print((Integer.valueOf(j)).toString()); //  write down the num of drawableObjs
                             pw.print(" ");
                             pw.print("conn.src_port.Name:");
                             pw.print(conn.src_port.Name);
@@ -723,7 +723,7 @@ public IconInst findAnotherIconInst(IconInst iconInst) {
                         //System.out.println("Debug:Schematic:writeAllCharsPortDest:iconInport? "+foo.Name);
                         if (((IconInport) icon_comp).Name.equals(conn.dest_port.Name)) {
                             pw.print("pin num: ");
-                            pw.print((new Integer(j)).toString());
+                            pw.print((Integer.valueOf(j)).toString());
                             pw.print(" ");
                             pw.print("conn.dest_port.Name:");
                             pw.print(conn.dest_port.Name);

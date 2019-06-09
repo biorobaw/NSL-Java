@@ -92,8 +92,8 @@ public class NslShell extends TextArea {
                 dispatchEvent(new KeyEvent(this,
                         KeyEvent.KEY_PRESSED,
                         System.currentTimeMillis(),
-                        InputEvent.SHIFT_MASK |
-                                InputEvent.BUTTON1_MASK |
+                        InputEvent.SHIFT_DOWN_MASK |
+                                InputEvent.BUTTON1_DOWN_MASK |
                                 InputEvent.CTRL_DOWN_MASK |
                                 InputEvent.META_DOWN_MASK,
                         KeyEvent.VK_ENTER,
@@ -157,7 +157,7 @@ public class NslShell extends TextArea {
 
     private class SelectEventHandler extends MouseAdapter {
         public void mousePressed(MouseEvent e) {
-            if ((e.getModifiers() & (InputEvent.BUTTON2_MASK | InputEvent.BUTTON3_MASK)) != 0) {
+            if ((e.getModifiersEx() & (InputEvent.BUTTON2_DOWN_MASK | InputEvent.BUTTON3_DOWN_MASK)) != 0) {
                 e.consume();
             }
         }
@@ -172,10 +172,10 @@ public class NslShell extends TextArea {
                 return;
             }
 
-            int mod = evt.getModifiers();
-            if (mod == InputEvent.ALT_MASK ||
-                    mod == InputEvent.CTRL_MASK ||
-                    mod == InputEvent.META_MASK)
+            int mod = evt.getModifiersEx();
+            if (mod == InputEvent.ALT_DOWN_MASK ||
+                    mod == InputEvent.CTRL_DOWN_MASK ||
+                    mod == InputEvent.META_DOWN_MASK)
                 evt.consume();
 
             int evtCode = evt.getKeyCode();

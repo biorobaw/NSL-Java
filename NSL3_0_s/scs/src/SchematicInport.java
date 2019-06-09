@@ -636,20 +636,20 @@ public class SchematicInport extends GraphicPart {
 
         pw.print("points of arrow: ");
         for (i = 0; i < 5; i++) {
-            pw.print((new Integer(x[i])).toString());
+            pw.print((Integer.valueOf(x[i])).toString());
             pw.print(" ");
-            pw.print((new Integer(y[i])).toString());
+            pw.print((Integer.valueOf(y[i])).toString());
             pw.print(" ");
         }
         pw.print("\n");
         pw.print("px0 py0 px1 py1: ");
-        pw.print((new Integer(px0)).toString());
+        pw.print((Integer.valueOf(px0)).toString());
         pw.print(" ");
-        pw.print((new Integer(py0)).toString());
+        pw.print((Integer.valueOf(py0)).toString());
         pw.print(" ");
-        pw.print((new Integer(px1)).toString());
+        pw.print((Integer.valueOf(px1)).toString());
         pw.print(" ");
-        pw.print((new Integer(py1)).toString());
+        pw.print((Integer.valueOf(py1)).toString());
         pw.print("\n");
 
 

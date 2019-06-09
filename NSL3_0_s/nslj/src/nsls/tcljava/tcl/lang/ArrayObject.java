@@ -26,13 +26,13 @@ import java.beans.*;
 
 class ArrayObject extends tcl.lang.ReflectObject {
 
-static final private String validCmds[] = {
-    "length",
-    "get",
-    "getrange",
-    "set",
-    "setrange"
-};
+    static final private String[] validCmds = {
+            "length",
+            "get",
+            "getrange",
+            "set",
+            "setrange"
+    };
 static final private int OPT_LENGTH	 	= 0;
 static final private int OPT_GET 	 	= 1;
 static final private int OPT_GETRANGE   	= 2;
@@ -65,8 +65,8 @@ static final private int OPT_SETRANGE   	= 4;
 
 public void
 cmdProc(
-    Interp interp,			// Current interpreter.
-    TclObject argv[])			// Argument list.
+        Interp interp,            // Current interpreter.
+        TclObject[] argv)			// Argument list.
 throws
     TclException			// If wrong number of args, a
 					// standard Tcl exception;

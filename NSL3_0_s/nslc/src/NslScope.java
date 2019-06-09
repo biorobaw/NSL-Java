@@ -593,7 +593,7 @@ public class NslScope {
     public int getNslTypeDim(String name) {
         int dim = -1;
         try {
-            dim = new Integer(name.substring(name.length() - 1));
+            dim = Integer.valueOf(name.substring(name.length() - 1));
         } catch (Exception ignored) {
         }
         return dim;
@@ -653,31 +653,31 @@ public class NslScope {
 
         if (name.indexOf("Float") == next) {
             try {
-                dim = new Integer(name.substring(next + 5));
+                dim = Integer.valueOf(name.substring(next + 5));
             } catch (Exception ex) {
                 return false;
             }
         } else if (name.indexOf("Double") == next) {
             try {
-                dim = new Integer(name.substring(next + 6));
+                dim = Integer.valueOf(name.substring(next + 6));
             } catch (Exception ex) {
                 return false;
             }
         } else if (name.indexOf("Int") == next) {
             try {
-                dim = new Integer(name.substring(next + 3));
+                dim = Integer.valueOf(name.substring(next + 3));
             } catch (Exception ex) {
                 return false;
             }
         } else if (name.indexOf("Boolean") == next) {
             try {
-                dim = new Integer(name.substring(next + 7));
+                dim = Integer.valueOf(name.substring(next + 7));
             } catch (Exception ex) {
                 return false;
             }
         } else if (name.indexOf("String") == next) {
             try {
-                dim = new Integer(name.substring(next + 6));
+                dim = Integer.valueOf(name.substring(next + 6));
             } catch (Exception ex) {
                 return false;
             }

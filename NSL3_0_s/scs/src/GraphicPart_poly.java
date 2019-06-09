@@ -262,12 +262,12 @@ public class GraphicPart_poly extends GraphicPart {
         super.writeAllChars(pw, x0, y0);
         //os.writeObject(c);
         pw.print("num poly verticies: ");
-        pw.print((new Integer(n)).toString());
+        pw.print((Integer.valueOf(n)).toString());
 
         for (i = 0; i < n; i++) {
-            pw.print((new Integer(x[i] - x0)).toString());
+            pw.print((Integer.valueOf(x[i] - x0)).toString());
             pw.print(" ");
-            pw.print((new Integer(y[i] - y0)).toString());
+            pw.print((Integer.valueOf(y[i] - y0)).toString());
             pw.print("\n");
         }
     }

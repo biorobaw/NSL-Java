@@ -320,13 +320,13 @@ public class GraphicPart_line extends GraphicPart {
         //os.writeObject(c);
 
         pw.print("x0d y0d x1d y1d :");
-        pw.print((new Integer(x0delta)).toString());
+        pw.print((Integer.valueOf(x0delta)).toString());
         pw.print(" ");
-        pw.print((new Integer(y0delta)).toString());
+        pw.print((Integer.valueOf(y0delta)).toString());
         pw.print(" ");
-        pw.print((new Integer(x1delta)).toString());
+        pw.print((Integer.valueOf(x1delta)).toString());
         pw.print(" ");
-        pw.print((new Integer(y1delta)).toString());
+        pw.print((Integer.valueOf(y1delta)).toString());
         pw.print("\n");
 
         //System.out.println("line:write:x0 "+x0+" x1 "+x1+" y0 "+y0+" y1 "+y1);

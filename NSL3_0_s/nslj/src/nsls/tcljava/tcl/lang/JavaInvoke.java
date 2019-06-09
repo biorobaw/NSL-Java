@@ -35,7 +35,7 @@ class JavaInvoke {
  * and re-use it to avoid garbage collection.
  */
 
-static private Object EMPTY_ARGS[] = new Object[0];
+    static private Object[] EMPTY_ARGS = new Object[0];
 
 
 /*
@@ -56,12 +56,12 @@ static private Object EMPTY_ARGS[] = new Object[0];
 
 static TclObject
 newInstance(
-    Interp interp,              // Current interpreter.
-    TclObject signature,	// Constructor signature.
-    TclObject argv[],		// Arguments.
-    int startIdx,		// Index of the first argument in argv[] to
-				// pass to the constructor.
-    int count)			// Number of arguments to pass to the
+        Interp interp,              // Current interpreter.
+        TclObject signature,    // Constructor signature.
+        TclObject[] argv,        // Arguments.
+        int startIdx,        // Index of the first argument in argv[] to
+        // pass to the constructor.
+        int count)			// Number of arguments to pass to the
 				// constructor.
 throws
     TclException		// Standard Tcl exception.
@@ -94,15 +94,15 @@ throws
 
 static TclObject
 callMethod(
-    Interp interp,              // Current interpreter.
-    TclObject reflectObj,	// The object whose method to invoke.
-    TclObject signature,	// Method signature.
-    TclObject argv[],		// Arguments.
-    int startIdx,		// Index of the first argument in argv[] to
-				// pass to the method.
-    int count,			// Number of arguments to pass to the
-				// method.
-    boolean convert)		// Whether the value should be converted
+        Interp interp,              // Current interpreter.
+        TclObject reflectObj,    // The object whose method to invoke.
+        TclObject signature,    // Method signature.
+        TclObject[] argv,        // Arguments.
+        int startIdx,        // Index of the first argument in argv[] to
+        // pass to the method.
+        int count,            // Number of arguments to pass to the
+        // method.
+        boolean convert)		// Whether the value should be converted
 				// into Tcl objects of the closest types.
 throws
     TclException
@@ -143,15 +143,15 @@ throws
 
 static TclObject
 callStaticMethod(
-    Interp interp,		// Current interpreter.	
-    TclObject classObj,		// Class whose static method to invoke.
-    TclObject signature,	// Method signature.
-    TclObject argv[],		// Arguments.
-    int startIdx,		// Index of the first argument in argv[] to
-				// pass to the method.
-    int count,			// Number of arguments to pass to the
-				// method.
-    boolean convert)		// Whether the value should be converted
+        Interp interp,        // Current interpreter.
+        TclObject classObj,        // Class whose static method to invoke.
+        TclObject signature,    // Method signature.
+        TclObject[] argv,        // Arguments.
+        int startIdx,        // Index of the first argument in argv[] to
+        // pass to the method.
+        int count,            // Number of arguments to pass to the
+        // method.
+        boolean convert)		// Whether the value should be converted
 				// into Tcl objects of the closest types.
 throws
     TclException
@@ -197,24 +197,24 @@ throws
 
 static Object
 call(
-    Interp interp,
-    PkgInvoker invoker,		// The PkgInvoked used to invoke the
-				// method or constructor.
-    TclObject signature,	// For formatting error message.
-    Object func,		// The Constructor or Method to call.
-    Object obj,			// The object associated with an instace
-				// method call. Should be null for
-				// constructor calls and static method
-				// calls.
-    TclObject argv[],		// Argument list.
-    int startIdx,		// Index of the first argument in argv[] to
-				// pass to the method or constructor.
-    int count)			// Number of arguments to pass to the
+        Interp interp,
+        PkgInvoker invoker,        // The PkgInvoked used to invoke the
+        // method or constructor.
+        TclObject signature,    // For formatting error message.
+        Object func,        // The Constructor or Method to call.
+        Object obj,            // The object associated with an instace
+        // method call. Should be null for
+        // constructor calls and static method
+        // calls.
+        TclObject[] argv,        // Argument list.
+        int startIdx,        // Index of the first argument in argv[] to
+        // pass to the method or constructor.
+        int count)			// Number of arguments to pass to the
 				// method or constructor.
 throws
     TclException		// Standard Tcl exception.
 {
-    Class paramTypes[];
+    Class[] paramTypes;
     Constructor cons = null;
     Method method = null;
     int i;
@@ -234,7 +234,7 @@ throws
 		" \"" + signature + "\"");
     }
 
-    Object args[];
+    Object[] args;
 
     if (count == 0) {
 	args = EMPTY_ARGS;
@@ -489,7 +489,7 @@ throws
 		propName + "\"");
     }
 
-    Object args[] = new Object[1];
+    Object[] args = new Object[1];
     args[0] = convertTclObject(interp, type, value);
 
     try {
@@ -744,19 +744,19 @@ throws
 	    return tclObj.toString();
 
 	} else if ((type == Integer.TYPE) || (type == Integer.class)) {
-	    return new Integer(TclInteger.get(interp, tclObj));
+	    return TclInteger.get(interp, tclObj);
 
 	} else if ((type == Boolean.TYPE) || (type == Boolean.class)) {
-	    return new Boolean(TclBoolean.get(interp, tclObj));
+	    return TclBoolean.get(interp, tclObj);
 
 	} else if ((type == Long.TYPE) || (type == Long.class)) {
-	    return new Long((long) TclInteger.get(interp, tclObj));
+	    return (long) TclInteger.get(interp, tclObj);
 
 	} else if ((type == Float.TYPE) || (type == Float.class)) {
-	    return new Float((float) TclDouble.get(interp, tclObj));
+	    return (float) TclDouble.get(interp, tclObj);
 
 	} else if ((type == Double.TYPE) || (type == Double.class)) {
-	    return new Double(TclDouble.get(interp, tclObj));
+	    return TclDouble.get(interp, tclObj);
 
 	} else if ((type == Byte.TYPE) || (type == Byte.class)) {
 	    int i = TclInteger.get(interp, tclObj);
@@ -764,7 +764,7 @@ throws
 		throw new TclException(interp,
 		   "integer value too large to represent in a byte");
 	    }
-	    return new Byte((byte) i);
+	    return (byte) i;
 
 	} else if ((type == Short.TYPE) || (type == Short.class)) {
 	    int i = TclInteger.get(interp, tclObj);
@@ -772,13 +772,13 @@ throws
 		throw new TclException(interp,
 		    "integer value too large to represent in a short");
 	    }
-	    return new Short((short) i);
+	    return (short) i;
 
 	} else if ((type == Character.TYPE) || (type == Character.class)) {
 	    String str = tclObj.toString();
 
 	    if (str.length() == 1) {
-		return new Character(str.charAt(0));
+		return str.charAt(0);
 	    } else {
 	        throw new TclException(interp, "expected character but got \""
 		    + tclObj + "\"");

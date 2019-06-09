@@ -24,17 +24,17 @@ import java.lang.reflect.*;
 
 class JavaInfoCmd implements Command {
 
-static final private String validCmds[] = {
-    "class",
-    "baseclass",
-    "dimensions",
-    "events",
-    "fields",
-    "methods",
-    "constructors",
-    "properties",
-    "superclass"
-};
+	static final private String[] validCmds = {
+			"class",
+			"baseclass",
+			"dimensions",
+			"events",
+			"fields",
+			"methods",
+			"constructors",
+			"properties",
+			"superclass"
+	};
 
 static final private int CLASS		= 0;
 static final private int BASECLASS   	= 1;
@@ -46,8 +46,8 @@ static final private int CONSTRUCTORS	= 6;
 static final private int PROPERTIES 	= 7;
 static final private int SUPERCLASS	= 8;
 
-static final private String propOpts[] = {"-type"};
-static final private String methOpts[] = {"-type", "-static"};
+	static final private String[] propOpts = {"-type"};
+	static final private String[] methOpts = {"-type", "-static"};
 
 static final int TYPE_OPT	= 0;
 static final int STATIC_OPT	= 1;
@@ -72,7 +72,7 @@ static final int STATIC_OPT	= 1;
 public void 
 cmdProc(
     Interp interp,			// Current interpreter for info query.
-    TclObject argv[])			// Argument list.
+	TclObject[] argv)			// Argument list.
 throws 
     TclException 			// Exceptions thrown as a result of bad
 					//   user input.
@@ -137,7 +137,7 @@ throws
 	    } catch (IntrospectionException e) {
 		break lookup;
 	    }
-	    EventSetDescriptor events[] = beanInfo.getEventSetDescriptors();
+		EventSetDescriptor[] events = beanInfo.getEventSetDescriptors();
 
 	    if (events == null) {
 		break lookup;
@@ -325,7 +325,7 @@ throws
 	throw new TclException(interp, e.toString());
     }
 
-    PropertyDescriptor propDesc[] = null;
+	PropertyDescriptor[] propDesc = null;
     propDesc = beaninfo.getPropertyDescriptors();
     
     TclObject resultListObj = TclList.newInstance();
@@ -547,7 +547,7 @@ throws
 		TclObject sublist = TclList.newInstance();
 		TclObject exceptions = TclList.newInstance();
 
-		Class ex[] = methodArray[m].getExceptionTypes();
+			Class[] ex = methodArray[m].getExceptionTypes();
 		for (int i = 0; i < ex.length; i++) {
 		    TclList.append(interp, exceptions, TclString.newInstance(
 			    ex[i].getName()));

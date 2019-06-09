@@ -12,34 +12,34 @@ import java.lang.*;
 
 public class NslColor extends Color {
 
-    static final private String colorNames[] = {
-	"BLUE",
-	"RED",
-	"GRAY",
-	"DARKGREY",
-	"YELLOW",
-	"GREEN",
-	"BLACK",
-	"CYAN",
-	"MAGENTA",
-	"ORANGE",
-	"PINK",
-	"WHITE",
+    static final private String[] colorNames = {
+            "BLUE",
+            "RED",
+            "GRAY",
+            "DARKGREY",
+            "YELLOW",
+            "GREEN",
+            "BLACK",
+            "CYAN",
+            "MAGENTA",
+            "ORANGE",
+            "PINK",
+            "WHITE",
     };
 
-    static final private Color colorTypes[] = {
-    	blue, 
-    	red,
-    	gray,
-    	darkGray,
-    	yellow,
-    	green,
-    	black,
-    	cyan,
-    	magenta,
-    	orange,
-    	pink,
-    	white,
+    static final private Color[] colorTypes = {
+            blue,
+            red,
+            gray,
+            darkGray,
+            yellow,
+            green,
+            black,
+            cyan,
+            magenta,
+            orange,
+            pink,
+            white,
     };
 
     public NslColor(int r, int g, int b) {

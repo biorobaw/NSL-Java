@@ -59,7 +59,7 @@ public class PkgInvoker {
  * in this hashtable. They key is the String name of a package.
  */
 
-static Hashtable cachedInvokers = new Hashtable();
+static Hashtable<String, PkgInvoker> cachedInvokers = new Hashtable<String, PkgInvoker>();
 
 /*
  * This is the default invoker to use if a package doesn't include a
@@ -89,7 +89,7 @@ static PkgInvoker defaultInvoker = new PkgInvoker();
 public Object 
 invokeConstructor(
     Constructor constructor,	// The constructor to invoke.
-    Object args[])		// Arguments for the constructor.
+	Object[] args)		// Arguments for the constructor.
 throws
     InstantiationException,	// Standard exceptions thrown by
     IllegalAccessException,	// Constructor.newInstance.
@@ -120,7 +120,7 @@ invokeMethod(
     Method method,		// The method to invoke.
     Object obj,			// The object associated with the method.
 				// May be null if the method is static.
-    Object args[])		// The arguments for the method.
+	Object[] args)		// The arguments for the method.
 throws
     IllegalAccessException,	// Standard exceptions throw by Method.Invoke.
     IllegalArgumentException,
@@ -222,11 +222,11 @@ getPkgInvoker(
 	pkg = clsName.substring(0, index);
     }
 
-    PkgInvoker invoker = (PkgInvoker)cachedInvokers.get(pkg);
+    PkgInvoker invoker = cachedInvokers.get(pkg);
     if (invoker == null) {
 	try {
-	    Class invCls = Class.forName(pkg + ".TclPkgInvoker");
-	    invoker = (PkgInvoker)(invCls.newInstance());
+	    Class<PkgInvoker> invCls = (Class<PkgInvoker>) Class.forName(pkg + ".TclPkgInvoker");
+	    invoker = (invCls.newInstance());
 	} catch (Exception e) {
 	    /*
 	     * The package doesn't include a PkgInvoker class. We use

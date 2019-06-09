@@ -770,7 +770,7 @@ class Module extends Component {
             pw.print(">>> Module: ");
             pw.print("\n");
             pw.print("sifVersionNum: ");
-            pw.print((new Integer(this.sifVersionNum)).toString());
+            pw.print((Integer.valueOf(this.sifVersionNum)).toString());
             pw.print("\n");
             // write flags
             pw.print("hasIcon: ");
@@ -851,7 +851,7 @@ class Module extends Component {
         pw.print("module: ");
         pw.print("\n");
         pw.print("sifVersionNum: ");
-        pw.print((new Integer(this.sifVersionNum)).toString());
+        pw.print((Integer.valueOf(this.sifVersionNum)).toString());
         pw.print("\n");
         // write flags
         pw.print("hasIcon: ");

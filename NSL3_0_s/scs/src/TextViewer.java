@@ -533,22 +533,22 @@ class TextViewer extends JFrame {
         Keymap map = JTextComponent.addKeymap("NslmMap", textComp.getKeymap());
 
         //define the keystrokeds to be added
-        KeyStroke next = KeyStroke.getKeyStroke(KeyEvent.VK_RIGHT, InputEvent.CTRL_MASK, false);
+        KeyStroke next = KeyStroke.getKeyStroke(KeyEvent.VK_RIGHT, InputEvent.CTRL_DOWN_MASK, false);
         //add the new mappings used DefaultEditorKit actions
         map.addActionForKeyStroke(next, getAction(DefaultEditorKit.nextWordAction));
 
-        KeyStroke prev = KeyStroke.getKeyStroke(KeyEvent.VK_LEFT, InputEvent.CTRL_MASK, false);
+        KeyStroke prev = KeyStroke.getKeyStroke(KeyEvent.VK_LEFT, InputEvent.CTRL_DOWN_MASK, false);
         map.addActionForKeyStroke(prev, getAction(DefaultEditorKit.previousWordAction));
 
-        KeyStroke selNext = KeyStroke.getKeyStroke(KeyEvent.VK_RIGHT, InputEvent.CTRL_MASK | InputEvent.SHIFT_MASK, false);
+        KeyStroke selNext = KeyStroke.getKeyStroke(KeyEvent.VK_RIGHT, InputEvent.CTRL_DOWN_MASK | InputEvent.SHIFT_DOWN_MASK, false);
         map.addActionForKeyStroke(selNext, getAction(DefaultEditorKit.selectionNextWordAction));
-        KeyStroke selPrev = KeyStroke.getKeyStroke(KeyEvent.VK_LEFT, InputEvent.CTRL_MASK | InputEvent.SHIFT_MASK, false);
+        KeyStroke selPrev = KeyStroke.getKeyStroke(KeyEvent.VK_LEFT, InputEvent.CTRL_DOWN_MASK | InputEvent.SHIFT_DOWN_MASK, false);
         map.addActionForKeyStroke(selPrev, getAction(DefaultEditorKit.selectionPreviousWordAction));
 
-        KeyStroke find = KeyStroke.getKeyStroke(KeyEvent.VK_F, InputEvent.CTRL_MASK, false);
+        KeyStroke find = KeyStroke.getKeyStroke(KeyEvent.VK_F, InputEvent.CTRL_DOWN_MASK, false);
         map.addActionForKeyStroke(find, getAction("find"));
 
-        KeyStroke findAgain = KeyStroke.getKeyStroke(KeyEvent.VK_G, InputEvent.CTRL_MASK, false);
+        KeyStroke findAgain = KeyStroke.getKeyStroke(KeyEvent.VK_G, InputEvent.CTRL_DOWN_MASK, false);
         map.addActionForKeyStroke(findAgain, getAction("findAgain"));
 
 
@@ -570,67 +570,67 @@ class TextViewer extends JFrame {
         Keymap map = JTextComponent.addKeymap("NslmMap", textComp.getKeymap());
 
 
-        KeyStroke selNext = KeyStroke.getKeyStroke(KeyEvent.VK_RIGHT, InputEvent.CTRL_MASK | InputEvent.SHIFT_MASK, false);
+        KeyStroke selNext = KeyStroke.getKeyStroke(KeyEvent.VK_RIGHT, InputEvent.CTRL_DOWN_MASK | InputEvent.SHIFT_DOWN_MASK, false);
         map.addActionForKeyStroke(selNext, getAction(DefaultEditorKit.selectionNextWordAction));
 
-        KeyStroke selPrev = KeyStroke.getKeyStroke(KeyEvent.VK_LEFT, InputEvent.CTRL_MASK | InputEvent.SHIFT_MASK, false);
+        KeyStroke selPrev = KeyStroke.getKeyStroke(KeyEvent.VK_LEFT, InputEvent.CTRL_DOWN_MASK | InputEvent.SHIFT_DOWN_MASK, false);
         map.addActionForKeyStroke(selPrev, getAction(DefaultEditorKit.selectionPreviousWordAction));
 
-        KeyStroke next = KeyStroke.getKeyStroke(KeyEvent.VK_F, InputEvent.CTRL_MASK, false);
+        KeyStroke next = KeyStroke.getKeyStroke(KeyEvent.VK_F, InputEvent.CTRL_DOWN_MASK, false);
         map.addActionForKeyStroke(next, getAction(DefaultEditorKit.forwardAction));
-        KeyStroke prev = KeyStroke.getKeyStroke(KeyEvent.VK_B, InputEvent.CTRL_MASK, false);
+        KeyStroke prev = KeyStroke.getKeyStroke(KeyEvent.VK_B, InputEvent.CTRL_DOWN_MASK, false);
         map.addActionForKeyStroke(prev, getAction(DefaultEditorKit.backwardAction));
 
-        KeyStroke selectionDown = KeyStroke.getKeyStroke(KeyEvent.VK_N, InputEvent.CTRL_MASK, false);
+        KeyStroke selectionDown = KeyStroke.getKeyStroke(KeyEvent.VK_N, InputEvent.CTRL_DOWN_MASK, false);
         map.addActionForKeyStroke(selectionDown, getAction(DefaultEditorKit.downAction));
-        KeyStroke selectionUp = KeyStroke.getKeyStroke(KeyEvent.VK_P, InputEvent.CTRL_MASK, false);
+        KeyStroke selectionUp = KeyStroke.getKeyStroke(KeyEvent.VK_P, InputEvent.CTRL_DOWN_MASK, false);
         map.addActionForKeyStroke(selectionUp, getAction(DefaultEditorKit.upAction));
 
-        KeyStroke pageDown = KeyStroke.getKeyStroke(KeyEvent.VK_V, InputEvent.CTRL_MASK, false);
+        KeyStroke pageDown = KeyStroke.getKeyStroke(KeyEvent.VK_V, InputEvent.CTRL_DOWN_MASK, false);
         map.addActionForKeyStroke(pageDown, getAction(DefaultEditorKit.pageDownAction));
 
-        KeyStroke pageUp = KeyStroke.getKeyStroke(KeyEvent.VK_U, InputEvent.CTRL_MASK, false);
+        KeyStroke pageUp = KeyStroke.getKeyStroke(KeyEvent.VK_U, InputEvent.CTRL_DOWN_MASK, false);
         map.addActionForKeyStroke(pageUp, getAction(DefaultEditorKit.pageUpAction));
 
-        KeyStroke endDoc = KeyStroke.getKeyStroke(KeyEvent.VK_GREATER, InputEvent.META_MASK | InputEvent.SHIFT_MASK, false);
+        KeyStroke endDoc = KeyStroke.getKeyStroke(KeyEvent.VK_GREATER, InputEvent.META_DOWN_MASK | InputEvent.SHIFT_DOWN_MASK, false);
         map.addActionForKeyStroke(endDoc, getAction(DefaultEditorKit.endAction));
-        KeyStroke beginingDoc = KeyStroke.getKeyStroke(KeyEvent.VK_LESS, InputEvent.META_MASK | InputEvent.SHIFT_MASK, false);
+        KeyStroke beginingDoc = KeyStroke.getKeyStroke(KeyEvent.VK_LESS, InputEvent.META_DOWN_MASK | InputEvent.SHIFT_DOWN_MASK, false);
         map.addActionForKeyStroke(beginingDoc, getAction(DefaultEditorKit.beginAction));
 
         // the VK_SPACE and VK_W not working as in Emacs - space deleting
-        //KeyStroke selectionStart=KeyStroke.getKeyStroke(KeyEvent.VK_SPACE,InputEvent.CTRL_MASK,false);
+        //KeyStroke selectionStart=KeyStroke.getKeyStroke(KeyEvent.VK_SPACE,InputEvent.CTRL_DOWN_MASK,false);
         //map.addActionForKeyStroke(selectionStart,getAction(DefaultEditorKit.selectionForwardAction)); //todo: setCharPosAction
         //this is doing nothing because only one char to can be assigned to cut
-        //KeyStroke cut1=KeyStroke.getKeyStroke(KeyEvent.VK_W,InputEvent.CTRL_MASK,false);
+        //KeyStroke cut1=KeyStroke.getKeyStroke(KeyEvent.VK_W,InputEvent.CTRL_DOWN_MASK,false);
         //map.addActionForKeyStroke(cut1,getAction(DefaultEditorKit.cutAction));
 
         //if we do save as XS, this will have to change
-        KeyStroke cut = KeyStroke.getKeyStroke(KeyEvent.VK_X, InputEvent.CTRL_MASK, false);
+        KeyStroke cut = KeyStroke.getKeyStroke(KeyEvent.VK_X, InputEvent.CTRL_DOWN_MASK, false);
         map.addActionForKeyStroke(cut, getAction(DefaultEditorKit.cutAction));
 
-        KeyStroke paste = KeyStroke.getKeyStroke(KeyEvent.VK_Y, InputEvent.CTRL_MASK, false);
+        KeyStroke paste = KeyStroke.getKeyStroke(KeyEvent.VK_Y, InputEvent.CTRL_DOWN_MASK, false);
         map.addActionForKeyStroke(paste, getAction(DefaultEditorKit.pasteAction));
 
-        KeyStroke moveToEndLine = KeyStroke.getKeyStroke(KeyEvent.VK_E, InputEvent.CTRL_MASK, false);
+        KeyStroke moveToEndLine = KeyStroke.getKeyStroke(KeyEvent.VK_E, InputEvent.CTRL_DOWN_MASK, false);
         map.addActionForKeyStroke(moveToEndLine, getAction(DefaultEditorKit.endLineAction));
 
         //not emacs like
-        KeyStroke selWord = KeyStroke.getKeyStroke(KeyEvent.VK_T, InputEvent.CTRL_MASK, false);
+        KeyStroke selWord = KeyStroke.getKeyStroke(KeyEvent.VK_T, InputEvent.CTRL_DOWN_MASK, false);
         map.addActionForKeyStroke(selWord, getAction(DefaultEditorKit.selectWordAction));
 
-        KeyStroke selLine = KeyStroke.getKeyStroke(KeyEvent.VK_K, InputEvent.CTRL_MASK, false);
+        KeyStroke selLine = KeyStroke.getKeyStroke(KeyEvent.VK_K, InputEvent.CTRL_DOWN_MASK, false);
         map.addActionForKeyStroke(selLine, getAction(DefaultEditorKit.selectLineAction));
 
-        KeyStroke delNext = KeyStroke.getKeyStroke(KeyEvent.VK_D, InputEvent.CTRL_MASK, false);
+        KeyStroke delNext = KeyStroke.getKeyStroke(KeyEvent.VK_D, InputEvent.CTRL_DOWN_MASK, false);
         map.addActionForKeyStroke(delNext, getAction(DefaultEditorKit.deleteNextCharAction));
 
-        KeyStroke insertLine = KeyStroke.getKeyStroke(KeyEvent.VK_O, InputEvent.CTRL_MASK, false);
+        KeyStroke insertLine = KeyStroke.getKeyStroke(KeyEvent.VK_O, InputEvent.CTRL_DOWN_MASK, false);
         map.addActionForKeyStroke(insertLine, getAction(DefaultEditorKit.insertBreakAction));
 
-        KeyStroke searchBackward = KeyStroke.getKeyStroke(KeyEvent.VK_R, InputEvent.CTRL_MASK, false);
+        KeyStroke searchBackward = KeyStroke.getKeyStroke(KeyEvent.VK_R, InputEvent.CTRL_DOWN_MASK, false);
         map.addActionForKeyStroke(searchBackward, getAction("findAgain"));
 
-        KeyStroke searchForward = KeyStroke.getKeyStroke(KeyEvent.VK_S, InputEvent.CTRL_MASK, false);
+        KeyStroke searchForward = KeyStroke.getKeyStroke(KeyEvent.VK_S, InputEvent.CTRL_DOWN_MASK, false);
         map.addActionForKeyStroke(searchForward, getAction("findAgain"));
 
         //set the keymap for the text component

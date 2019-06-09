@@ -412,7 +412,7 @@ public class Declaration {
         pw.print(varCategoryType);
         pw.print("\n");
         pw.print("varDimensions: ");
-        pw.print((new Integer(varDimensions)).toString());
+        pw.print((Integer.valueOf(varDimensions)).toString());
         pw.print("\n");
         pw.print("varType: ");
         pw.print(varType);
@@ -434,13 +434,13 @@ public class Declaration {
         pw.print((Boolean.valueOf(portBuffering)).toString());
         pw.print("\n");
         pw.print("portIconDirection: ");
-        pw.print((new Character(portIconDirection)).toString());
+        pw.print((Character.valueOf(portIconDirection)).toString());
         pw.print("\n");
         pw.print("portSchDirection: ");
-        pw.print((new Character(portSchDirection)).toString());
+        pw.print((Character.valueOf(portSchDirection)).toString());
         pw.print("\n");
         pw.print("portSignalType: ");
-        pw.print((new Character(portSignalType)).toString());
+        pw.print((Character.valueOf(portSignalType)).toString());
         pw.print("\n");
 
         pw.print("modLibNickName: ");

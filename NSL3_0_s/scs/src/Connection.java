@@ -504,13 +504,13 @@ public class Connection extends Component {
 
         //os.writeObject(myColor);
         pw.print("numVerticies: ");
-        pw.print((new Integer(numVerticies)).toString());
+        pw.print((Integer.valueOf(numVerticies)).toString());
         pw.print("\n");
         for (i = 0; i < numVerticies; i++) {
             pw.print(" x: ");
-            pw.print((new Integer(x[i])).toString());
+            pw.print((Integer.valueOf(x[i])).toString());
             pw.print(" y: ");
-            pw.print((new Integer(y[i])).toString());
+            pw.print((Integer.valueOf(y[i])).toString());
             pw.print("\n");
         }
     }

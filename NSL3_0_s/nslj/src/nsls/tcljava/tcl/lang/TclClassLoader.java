@@ -136,7 +136,7 @@ throws
     SecurityException       // Attempt to dynamically load tcl/java package.
 {
     Class result;           // The Class that is loaded.             
-    byte  classData[];      // The bytes that compose the class file.
+    byte[] classData;      // The bytes that compose the class file.
     
     /* 
      * Check our local cache of classes 

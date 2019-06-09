@@ -249,11 +249,11 @@ class Tree extends Panel implements AdjustmentListener {
 
                 if (lRect.contains(px, py)) {
                     if (lNode.isExpandable()) {
-                        lNode.expandCollapse((Tree) pe.getSource(), pe.getModifiers());
+                        lNode.expandCollapse((Tree) pe.getSource(), pe.getModifiersEx());
                         refresh();
                     }
                 } else {
-                    lNode.select((Tree) pe.getSource(), pe.getModifiers());
+                    lNode.select((Tree) pe.getSource(), pe.getModifiersEx());
                     repaint();
                 }
             }

@@ -35,8 +35,8 @@ class JavaIsNullCmd implements Command {
 
 public void
 cmdProc(
-    Interp interp,              // The current interpreter.
-    TclObject argv[])           // The command arguments.
+        Interp interp,              // The current interpreter.
+        TclObject[] argv)           // The command arguments.
 throws
     TclException		// Standard Tcl Exception.
 {

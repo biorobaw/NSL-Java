@@ -1338,7 +1338,7 @@ public class SCSUtility {
 
     //---------------------------------------------------------------------
 
-    public static void folderZipCompressor(ZipOutputStream zipOutputStream, String canonicalToBeZippedDir, String zippedNames[]) {
+    public static void folderZipCompressor(ZipOutputStream zipOutputStream, String canonicalToBeZippedDir, String[] zippedNames) {
 
         byte[] buffer = new byte[1024];
         int bytesread;

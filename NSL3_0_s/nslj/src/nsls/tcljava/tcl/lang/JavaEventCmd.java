@@ -32,9 +32,9 @@ BeanEventMgr eventMgr = null;
  * Valid command options.
  */
 
-static final private String validOpts[] = {
-    "-index",
-};
+    static final private String[] validOpts = {
+            "-index",
+    };
 
 static final int OPT_INDEX = 0;
 
@@ -59,8 +59,8 @@ static final int OPT_INDEX = 0;
 
 public void
 cmdProc(
-    Interp interp,		// Current interpreter.
-    TclObject argv[])		// Argument list.
+        Interp interp,        // Current interpreter.
+        TclObject[] argv)		// Argument list.
 throws 
     TclException 		// A standard Tcl exception.
 {

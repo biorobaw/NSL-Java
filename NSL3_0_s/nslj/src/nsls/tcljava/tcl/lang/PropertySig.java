@@ -143,7 +143,7 @@ throws
 	    break search_prop;
 	}
 
-	PropertyDescriptor descriptors[] = beanInfo.getPropertyDescriptors();
+        PropertyDescriptor[] descriptors = beanInfo.getPropertyDescriptors();
 
 	if (descriptors == null) {
 	    break search_prop;

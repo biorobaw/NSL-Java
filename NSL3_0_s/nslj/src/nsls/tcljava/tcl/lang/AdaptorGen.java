@@ -100,9 +100,9 @@ private static final int ACC_SUPER  = 0x0020;
 
 private DataOutputStream ostream;
 private Class listenerCls;
-private Method methods[];
+    private Method[] methods;
 private String clsName;
-private Class superCls;
+private Class<EventAdaptor> superCls;
 
 /*
  * The number of items that have been added into the constant pool so
@@ -125,7 +125,7 @@ Vector constPool;
  * copies of the same string in the constant pool.
  */
 
-Hashtable utf8Tab;
+Hashtable<Object, Short> utf8Tab;
 
 /*
  * The hashtable stores the Class objects of all the Object types
@@ -140,14 +140,14 @@ Hashtable utf8Tab;
  *	  class.
  */
 
-Hashtable allClasses;
+Hashtable<Class, Class> allClasses;
 
 /*
  * This hashtable contains all the Class objects of the primitive
  * types used in the adaptor class.
  */
 
-Hashtable primClasses;
+Hashtable<Class, Class> primClasses;
 
 /*
  * This hashtable contains all the primitive types returned by the
@@ -155,14 +155,14 @@ Hashtable primClasses;
  * there is a method that returns an object (of any class).
  */
 
-Hashtable returnTypes;
+Hashtable<Class<Object>, Class<Object>> returnTypes;
 
 /*
  * This hashtable contains the constant pool IDs for the _return_<type>
  * methods.
  */
 
-Hashtable returnMethodRef;
+Hashtable<Object, Short> returnMethodRef;
 
 /*
  * This hashtable stores the constant pool IDs for the constructors of
@@ -170,21 +170,21 @@ Hashtable returnMethodRef;
  * types to the _processEvent() method.
  */
 
-Hashtable wrapperConsRef;
+Hashtable<Object, Short> wrapperConsRef;
 
 /*
  * This hashtable contains the constant pool IDs for all the classes
  * referenced by the adaptor class.
  */
 
-Hashtable clsRef;
+Hashtable<Object, Short> clsRef;
 
 /*
  * This hashtable contains the constant pool IDs for all the strings
  * referenced by the adaptor class.
  */
 
-Hashtable stringRef;
+Hashtable<Object, Short> stringRef;
 
 /*
  * The constant pool ID of the adaptor class.
@@ -238,7 +238,7 @@ short cp_wrongException;
  * cp_methodDesc[i] contains info about method[i].
  */
 
-MethodDesc cp_methodDesc[];
+    MethodDesc[] cp_methodDesc;
 
 /*
  * Store information about the constructor of the adaptor class.
@@ -266,9 +266,9 @@ MethodDesc cp_consDesc;
 
 byte[]
 generate(
-    EventSetDescriptor desc,
-    Class superClass,
-    String className)
+		EventSetDescriptor desc,
+		Class<EventAdaptor> superClass,
+		String className)
 {
     /*
      * Copy these arguments into member variables so that they don't need
@@ -286,15 +286,15 @@ generate(
      * be generated.
      */
 
-    allClasses = new Hashtable();
-    primClasses = new Hashtable();
-    returnTypes = new Hashtable();
+    allClasses = new Hashtable<>();
+    primClasses = new Hashtable<Class, Class>();
+    returnTypes = new Hashtable<>();
 
-    returnMethodRef = new Hashtable();
-    wrapperConsRef = new Hashtable();
-    clsRef = new Hashtable();
-    stringRef = new Hashtable();
-    utf8Tab = new Hashtable();
+    returnMethodRef = new Hashtable<>();
+    wrapperConsRef = new Hashtable<>();
+    clsRef = new Hashtable<>();
+    stringRef = new Hashtable<>();
+    utf8Tab = new Hashtable<Object, Short>();
     cp_methodDesc = new MethodDesc[methods.length];
     analyzeListener();
     cpSize = 1;
@@ -370,7 +370,7 @@ analyzeListener()
     boolean paramsDefined = false;
 
     for (i = 0; i < methods.length; i++) {
-	Class params[] = methods[i].getParameterTypes();
+        Class[] params = methods[i].getParameterTypes();
 
 	/*
 	 * Record all classes (including wrapper classes) that will
@@ -401,7 +401,7 @@ analyzeListener()
 	 * Record all exceptions thrown by the methods.
 	 */
 
-	Class exceptions[] = methods[i].getExceptionTypes();
+        Class[] exceptions = methods[i].getExceptionTypes();
 	for (j = 0; j < exceptions.length; j++) {
 	    allClasses.put(exceptions[j], exceptions[j]);
 	}
@@ -582,8 +582,8 @@ throws
     cp_wrongException = cp_putMethodRef(cp_super_class, "_wrongException",
 	    "()V");
 
-    for (Enumeration e = returnTypes.keys(); e.hasMoreElements(); ) {
-	Class retType = (Class)e.nextElement();
+    for (Enumeration<Class<Object>> e = returnTypes.keys(); e.hasMoreElements(); ) {
+	Class retType = e.nextElement();
 	short ref;
 
 	if (retType.isPrimitive()) {
@@ -616,7 +616,7 @@ throws
      * All the classes referred to by the generated class.
      */
 
-    for (Enumeration e = allClasses.keys(); e.hasMoreElements(); ) {
+    for (Enumeration<Class> e = allClasses.keys(); e.hasMoreElements(); ) {
 	Class type = (Class)e.nextElement();
 
 	short ref = cp_putClass(type.getName());
@@ -630,7 +630,7 @@ throws
      * super._processEvent().
      */
 
-    for (Enumeration e = primClasses.keys(); e.hasMoreElements(); ) {
+    for (Enumeration<Class> e = primClasses.keys(); e.hasMoreElements(); ) {
 	/*
 	 * **** KLUDGE ****
 	 *
@@ -645,7 +645,7 @@ throws
 	e.nextElement();
     }
 
-    for (Enumeration e = primClasses.keys(); e.hasMoreElements(); ) {
+    for (Enumeration<Class> e = primClasses.keys(); e.hasMoreElements(); ) {
 	Class primType = (Class)e.nextElement();
 	short class_index = cp_getClass(getWrapperClass(primType));
 	short ref = ref = cp_putMethodRef(class_index,	"<init>",
@@ -830,7 +830,7 @@ throws
 
     max_stacks = 6;
 
-    Class paramTypes[] = methods[methodIdx].getParameterTypes();
+    Class[] paramTypes = methods[methodIdx].getParameterTypes();
     int numParams = paramTypes.length;
 
     max_locals = 1;					// "this" pointer
@@ -983,7 +983,7 @@ throws
      *	   for jumping to the "normal" return statement.)
      */
 
-    Class exceptions[] = methods[methodIdx].getExceptionTypes();
+    Class[] exceptions = methods[methodIdx].getExceptionTypes();
 
     int offset = 5 + 4 + exceptions.length * 18 + 4 ;
     code.writeByte(GOTO_W);		// goto_w	#<offset>
@@ -1098,7 +1098,7 @@ throws
      */
 
     code.close();
-    byte codeBytes[] = baos.toByteArray();
+    byte[] codeBytes = baos.toByteArray();
 
     ostream.writeShort(cp_code);	// attr_name_index = "Code"
     ostream.writeInt(codeBytes.length	// attr_length
@@ -1154,12 +1154,12 @@ internalClassName(
 
 private final static void
 hashPutShort(
-    Hashtable hashtable,	// The hashtable.
-    Object key,			// The key.
-    short num)			// Put this number under the given key
+		Hashtable<Object, Short> hashtable,    // The hashtable.
+		Object key,            // The key.
+		short num)			// Put this number under the given key
 				// in the hashtable.
 {
-    Short shortObj = new Short(num);
+    Short shortObj = num;
     hashtable.put(key, shortObj);
 }
 
@@ -1182,10 +1182,10 @@ hashPutShort(
 
 private final static short
 hashGetShort(
-    Hashtable hashtable,	// The hashtable.
-    Object key)			// The key.
+		Hashtable<Object, Short> hashtable,    // The hashtable.
+		Object key)			// The key.
 {
-    return ((Short)hashtable.get(key)).shortValue();
+    return (hashtable.get(key)).shortValue();
 }
 
 /*
@@ -1303,7 +1303,7 @@ getMethodDescriptor(
     StringBuffer sbuf = new StringBuffer();
     sbuf.append('(');
 
-    Class params[] = method.getParameterTypes();
+    Class[] params = method.getParameterTypes();
 
     for (int i = 0; i < params.length; i++) {
 	sbuf.append(getTypeDesc(params[i]));
@@ -1377,7 +1377,7 @@ cp_putUtf8(
 {
     Short shortObj;
 
-    shortObj = (Short)utf8Tab.get(string);
+    shortObj = utf8Tab.get(string);
 
     /*
      * Check to make sure that the string is not already in the
