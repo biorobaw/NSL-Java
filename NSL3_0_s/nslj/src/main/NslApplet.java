@@ -14,8 +14,6 @@
  * Transform java application NslMain to java applet NslApplet
  */
 
-package nslj.src.main;
-
 import nslj.src.system.NslSystem;
 
 import java.applet.Applet;
