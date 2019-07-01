@@ -10,8 +10,6 @@
 //
 //////////////////////////////////////////////////////////////////////
 
-package nslj.src.main;
-
 import nslj.src.system.*;
 import nslj.src.cmd.*;
 import nslj.src.lang.*;
