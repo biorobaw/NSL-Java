@@ -17,14 +17,12 @@ To install NSL after cloning this repository:
 
 3.  Copy the `NSL3_0_s` folder to `Program Files`.
 
-5.  Change `<jdk-version>` in the line that sets `JAVA_HOME` to your JDK folder name.
-
 4.  Copy the files `SCS_PREFERENCES` and `SCS_LIBRARY_PATHS` to your home folder.
     The folder to store it in should be `C:\Users\<username>`.
 
 5.  Set the following system environment variables:
     <jdk-version> for JAVA_HOME is the folder in `C:\Program Files\Java\`.
-    If using OpenJDK, the JDK folder may be stored under the name of your OpenJDK vendor like `C:\Program Files\Amazon Corretto\`.
+    If using OpenJDK, the JDK folder may be stored under the name of your OpenJDK vendor like `C:\Program Files\Amazon Corretto\`. Change `<jdk-version>` in the line that sets `JAVA_HOME` to your JDK folder name.
 ```
 JAVA_HOME = "C:\Program Files\Java\<jdk-version>"
 

@@ -1,9 +1,9 @@
 # Binary files
-*.class
-*.jar
+#*.class
+#*.jar
 
 # Archive files
-*.zip
+#*.zip
 *.tar.gz
 *.rar
 *.7z
