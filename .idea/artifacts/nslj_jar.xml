@@ -6,9 +6,9 @@
         <element id="file-copy" path="$PROJECT_DIR$/NSL3_0_s/nslj/src/main/META-INF/MANIFEST.MF" />
       </element>
       <element id="module-output" name="nsl" />
-      <element id="extracted-dir" path="C:/Program Files/Amazon Corretto/java3d-1_5_1/lib/ext/j3dcore.jar" path-in-jar="/" />
-      <element id="extracted-dir" path="C:/Program Files/Amazon Corretto/java3d-1_5_1/lib/ext/j3dutils.jar" path-in-jar="/" />
-      <element id="extracted-dir" path="C:/Program Files/Amazon Corretto/java3d-1_5_1/lib/ext/vecmath.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="C:/Program Files/Java/java3d-1_5_1/lib/ext/j3dcore.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="C:/Program Files/Java/java3d-1_5_1/lib/ext/j3dutils.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="C:/Program Files/Java/java3d-1_5_1/lib/ext/vecmath.jar" path-in-jar="/" />
     </root>
   </artifact>
 </component>

@@ -58,7 +58,7 @@
       <find>.contains</find>
     </findStrings>
     <dirStrings>
-      <dir>C:\Users\joaqu\nsl\NSL3_0_s\scs</dir>
+      <dir>C:\Program Files\NSL3_0_s\scs</dir>
     </dirStrings>
   </component>
   <component name="IdeDocumentHistory">
@@ -199,7 +199,7 @@
       <option name="MAIN_CLASS_NAME" value="nslj.src.main.NslMain" />
       <module name="nsl" />
       <option name="PROGRAM_PARAMETERS" value="MaxSelectorModel" />
-      <option name="VM_PARAMETERS" value="-cp $Classpath$;.;C:\Users\joaqu\nsl\NSL3_0_s\nslc\src;C:\Users\joaqu\nsl\NSL3_0_s;C:\Users\joaqu\nsl\NSL3_0_s\nslj\src\main;C:\Users\joaqu\nsl\NSL3_0_s\nslj\src\nsls\jacl;C:\Users\joaqu\nsl\NSL3_0_s\nslj\src\nsls\tcljava;C:\Users\joaqu\nsl\NSL3_0_s\nsl3_0\BasicBookModels\MaxSelectorModel\1_1_1\src" />
+      <option name="VM_PARAMETERS" value="-cp $Classpath$;.;C:\Program Files\NSL3_0_s\nslc\src;C:\Program Files\NSL3_0_s;C:\Program Files\NSL3_0_s\nslj\src\main;C:\Program Files\NSL3_0_s\nslj\src\nsls\jacl;C:\Program Files\NSL3_0_s\nslj\src\nsls\tcljava;C:\Program Files\NSL3_0_s\nsl3_0\BasicBookModels\MaxSelectorModel\1_1_1\src" />
       <extension name="coverage">
         <pattern>
           <option name="PATTERN" value="nslj.src.main.*" />
@@ -221,7 +221,7 @@
       <option name="MAIN_CLASS_NAME" value="nslj.src.main.NslMain" />
       <module name="nsl" />
       <option name="PROGRAM_PARAMETERS" value="MaxSelectorModel" />
-      <option name="VM_PARAMETERS" value="-cp $Classpath$;.;C:\Users\joaqu\nsl\NSL3_0_s\nslc\src;C:\Users\joaqu\nsl\NSL3_0_s;C:\Users\joaqu\nsl\NSL3_0_s\nslj\src\main;C:\Users\joaqu\nsl\NSL3_0_s\nslj\src\nsls\jacl;C:\Users\joaqu\nsl\NSL3_0_s\nslj\src\nsls\tcljava" />
+      <option name="VM_PARAMETERS" value="-cp $Classpath$;.;C:\Program Files\NSL3_0_s\nslc\src;C:\Program Files\NSL3_0_s;C:\Program Files\NSL3_0_s\nslj\src\main;C:\Program Files\NSL3_0_s\nslj\src\nsls\jacl;C:\Program Files\NSL3_0_s\nslj\src\nsls\tcljava" />
       <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/NSL3_0_s/nsl3_0/BasicBookModels/MaxSelector/1_1_1/src" />
       <extension name="coverage">
         <pattern>
@@ -237,7 +237,7 @@
       <option name="MAIN_CLASS_NAME" value="NslCompiler" />
       <module name="nsl" />
       <option name="PROGRAM_PARAMETERS" value="MaxSelectorModel" />
-      <option name="VM_PARAMETERS" value="-cp $Classpath$;.;C:\Users\joaqu\nsl\NSL3_0_s\nslc\src;C:\Users\joaqu\nsl\NSL3_0_s;C:\Users\joaqu\nsl\NSL3_0_s\nslj\src\main;C:\Users\joaqu\nsl\NSL3_0_s\nslj\src\nsls\jacl;C:\Users\joaqu\nsl\NSL3_0_s\nslj\src\nsls\tcljava" />
+      <option name="VM_PARAMETERS" value="-cp $Classpath$;.;C:\Program Files\NSL3_0_s\nslc\src;C:\Program Files\NSL3_0_s;C:\Program Files\NSL3_0_s\nslj\src\main;C:\Program Files\NSL3_0_s\nslj\src\nsls\jacl;C:\Program Files\NSL3_0_s\nslj\src\nsls\tcljava" />
       <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/NSL3_0_s/nsl3_0/BasicBookModels/MaxSelector/1_1_1/src" />
       <method v="2">
         <option name="Make" enabled="true" />
