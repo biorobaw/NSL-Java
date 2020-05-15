@@ -1,3 +1,4 @@
+package model;
 /* Mdulo NSL que representa la funcionalidad de la rata simulada.
    Alejandra Barrera
    Fecha: 23 de marzo de 2005.
@@ -21,7 +22,7 @@ import robot.IRobot;
 
 
 
-import nslj.src.lang.*;
+import lang.*;
 public class Rat extends NslModule {
 	public static final int MAX_PIXEL_MARCA = Configuration.getInt("Rat.MAX_PIXEL_MARCA");	
 	public static final int PIXELES_RUIDO = Configuration.getInt("Rat.PIXELES_RUIDO");

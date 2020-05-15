@@ -1,3 +1,4 @@
+package model;
 /* Clase que representa el remapeo del
    ancla del ambiente.
    Alejandra Barrera

@@ -13,9 +13,9 @@
 /**
  * Run current / a specific model/module
  */
-package nslj.src.cmd;
+package cmd;
 
-import nslj.src.system.NslScheduler;
+import system.NslScheduler;
 
 import java.util.StringTokenizer;
 

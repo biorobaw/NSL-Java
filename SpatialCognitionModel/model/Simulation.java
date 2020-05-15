@@ -1,3 +1,4 @@
+package model;
 
 /*
  * Simulation.java

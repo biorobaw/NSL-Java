@@ -5,7 +5,7 @@
 // Copyright: COPYRIGHT file is included with each such copy.
 // Copyright: Email nsl@java.usc.edu.
 
-package nslj.src.system;
+package system;
 
 
 public class NslDoubleSync {

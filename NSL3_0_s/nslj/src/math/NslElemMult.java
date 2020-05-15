@@ -11,9 +11,9 @@
 //
 //
 
-package nslj.src.math;
+package math;
 
-import nslj.src.lang.*;
+import lang.*;
 
 /**
  * Multiplication routines.

@@ -7,7 +7,7 @@
 
 ////////////////////////////////////////////////////////////////////////////////
 // NslNumeric4.java
-package nslj.src.lang;
+package lang;
 
 @SuppressWarnings("unused")
 public abstract class NslNumeric4 extends NslNumeric {

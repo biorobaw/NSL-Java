@@ -1,3 +1,4 @@
+package model;
 /* Mdulo NSL que representa la capa de remapeo dinmico del
    ambiente y del ancla dentro del mismo.
    Alejandra Barrera
@@ -9,7 +10,7 @@
 
 import javax.vecmath.Point2d;
 
-import nslj.src.lang.*;
+import lang.*;
 import java.awt.geom.Point2D.Double;
 
 public class DynamicRemappingLayer extends NslModule {

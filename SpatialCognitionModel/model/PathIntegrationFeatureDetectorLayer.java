@@ -1,3 +1,4 @@
+package model;
 /* M�dulo NSL que representa una capa de neuronas cuya activaci�n
    codifica la se�al de path integration generada por la capa
    DynamicRemappingLayer cada vez que la rata experimenta un
@@ -9,11 +10,11 @@
 
 
 
-import nslj.src.system.*; 
-import nslj.src.cmd.*; 
-import nslj.src.lang.*; 
-import nslj.src.math.*; 
-import nslj.src.display.*; 
+import system.*; 
+import cmd.*; 
+import lang.*; 
+import math.*; 
+import display.*; 
 import java.lang.*;
 import java.util.Random;
 import java.io.*;

@@ -11,8 +11,8 @@
 //
 //
 
-package nslj.src.math;
-import nslj.src.lang.*;
+package math;
+import lang.*;
 
 @SuppressWarnings({"UnusedReturnValue", "unused", "Duplicates", "ConstantConditions", "ParameterCanBeLocal"})
 public class NslInverse {

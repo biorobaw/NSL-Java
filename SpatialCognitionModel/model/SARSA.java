@@ -1,3 +1,4 @@
+package model;
 /*
  Alejandra Barrera
  Versin 1
@@ -13,7 +14,8 @@
  Fecha: 10 de agosto de 2010
  Se implementa Q-Learning para el ajuste de la recompensa usando los pesos e de las aristas.
  */
-import nslj.src.lang.*;
+import lang.*;
+
 import java.util.*;
 import java.awt.*;
 

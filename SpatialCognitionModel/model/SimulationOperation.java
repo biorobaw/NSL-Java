@@ -1,3 +1,4 @@
+package model;
 import javax.vecmath.Vector3f;
 
 /*

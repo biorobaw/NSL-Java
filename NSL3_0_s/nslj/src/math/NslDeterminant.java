@@ -11,11 +11,11 @@
 //
 //
 
-package nslj.src.math;
+package math;
 
-import nslj.src.lang.NslDouble2;
-import nslj.src.lang.NslFloat2;
-import nslj.src.lang.NslInt2;
+import lang.NslDouble2;
+import lang.NslFloat2;
+import lang.NslInt2;
 
 @SuppressWarnings({"Duplicates", "ConstantConditions", "unused"})
 public class NslDeterminant {

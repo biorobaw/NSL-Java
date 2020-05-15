@@ -7,7 +7,7 @@
 
 ////////////////////////////////////////////////////////////////////////////////
 // NslNumeric3.java
-package nslj.src.lang;
+package lang;
 
 
 @SuppressWarnings({"DanglingJavadoc", "unused"})

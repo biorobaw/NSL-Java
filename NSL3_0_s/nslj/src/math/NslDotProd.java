@@ -26,12 +26,12 @@
  */
 
 
-package nslj.src.math;
+package math;
 
-import nslj.src.lang.NslBoolean1;
-import nslj.src.lang.NslDouble1;
-import nslj.src.lang.NslFloat1;
-import nslj.src.lang.NslInt1;
+import lang.NslBoolean1;
+import lang.NslDouble1;
+import lang.NslFloat1;
+import lang.NslInt1;
 
 
 @SuppressWarnings("Duplicates")

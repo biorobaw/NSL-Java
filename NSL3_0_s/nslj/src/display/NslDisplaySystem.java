@@ -9,11 +9,11 @@
  * @author Nikunj Mehta
  */
 
-package nslj.src.display;
+package display;
 
-import nslj.src.lang.NslModule;
-import nslj.src.system.NslDoubleSync;
-import nslj.src.system.NslSystem;
+import lang.NslModule;
+import system.NslDoubleSync;
+import system.NslSystem;
 
 public class NslDisplaySystem extends Thread {
 

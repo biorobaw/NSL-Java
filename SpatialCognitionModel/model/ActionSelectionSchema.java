@@ -1,13 +1,14 @@
+package model;
 /* M�dulo de selecci�n de acci�n.
    Alejandra Barrera
    Versi�n: 1 (Febrero, 2005)
  */
 
-import nslj.src.system.*;
-import nslj.src.cmd.*;
-import nslj.src.lang.*;
-import nslj.src.math.*;
-import nslj.src.display.*;
+import system.*;
+import cmd.*;
+import lang.*;
+import math.*;
+import display.*;
 import java.util.*;
 
 public class ActionSelectionSchema extends NslModule {

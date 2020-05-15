@@ -6,11 +6,11 @@
 // Copyright: Email nsl@java.usc.edu.
 
 
-package nslj.src.display;
+package display;
 
-import nslj.src.lang.*;
-import nslj.src.system.NslInterpreter;
-import nslj.src.system.NslSystem;
+import lang.*;
+import system.NslInterpreter;
+import system.NslSystem;
 
 import java.awt.*;
 import java.awt.event.*;

@@ -14,7 +14,7 @@
  *  Imported the Source directory
  *
  */
-package nslj.src.lang;
+package lang;
 
 class NslConnection {
     public NslModule child1;

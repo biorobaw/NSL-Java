@@ -1,4 +1,4 @@
-/* SCCS  %W--- %G% -- %U% */
+
 
 // Copyright: Copyright (c) 1997-2002 University of Southern California Brain Project.
 // Copyright: This software may be freely copied provided the toplevel
@@ -12,7 +12,7 @@
 //
 //////////////////////////////////////////////////////////////////////
 
-import nslj.src.exceptions.NslParseArgumentException;
+import exceptions.NslParseArgumentException;
 
 import java.io.*;
 import java.lang.reflect.Field;
@@ -27,7 +27,6 @@ import java.util.Vector;
 public class NslCompiler {
 
     private static String moduleName, inputFileName, outputFileName, currentDirectory, fullModuleName;
-
     private static boolean generateClass = true;
     private static boolean generateJavaCode = false;
     private static boolean generateXMLCode = false;

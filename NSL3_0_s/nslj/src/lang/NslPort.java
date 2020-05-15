@@ -33,7 +33,7 @@
  *
  * @see NslModule, NslConnection
  */
-package nslj.src.lang;
+package lang;
 
 @SuppressWarnings({"WeakerAccess", "unused"})
 abstract public class NslPort {

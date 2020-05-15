@@ -5,7 +5,7 @@
 // Copyright: COPYRIGHT file is included with each such copy.
 // Copyright: Email nsl@java.usc.edu.
 
-package nslj.src.nsls.struct;
+package nsls.struct;
 
 
 import tcl.lang.Interp;

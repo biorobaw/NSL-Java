@@ -9,7 +9,7 @@
 // NslString0.java
 //
 
-package nslj.src.lang;
+package lang;
 
 @SuppressWarnings({"WeakerAccess", "unused"})
 public class NslString0 extends NslString {

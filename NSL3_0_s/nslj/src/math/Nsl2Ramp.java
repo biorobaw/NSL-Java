@@ -48,14 +48,14 @@
  The method returns the reference to <tt>dest</tt>.
 */
 
-package nslj.src.math;
+package math;
 
-import nslj.src.lang.NslFloat0;
-import nslj.src.lang.NslFloat1;
-import nslj.src.lang.NslFloat2;
-import nslj.src.lang.NslDouble0;
-import nslj.src.lang.NslDouble1;
-import nslj.src.lang.NslDouble2;
+import lang.NslFloat0;
+import lang.NslFloat1;
+import lang.NslFloat2;
+import lang.NslDouble0;
+import lang.NslDouble1;
+import lang.NslDouble2;
 
 
 @SuppressWarnings({"unused", "Duplicates", "ParameterCanBeLocal"})

@@ -5,12 +5,12 @@
 // Copyright: COPYRIGHT file is included with each such copy.
 // Copyright: Email nsl@java.usc.edu.
 
-package nslj.src.lang;
+package lang;
 
-import nslj.src.display.NslButton;
-import nslj.src.display.NslDisplaySystem;
-import nslj.src.display.NslFrame;
-import nslj.src.display.NslUserPanel;
+import display.NslButton;
+import display.NslDisplaySystem;
+import display.NslFrame;
+import display.NslUserPanel;
 
 import java.util.Enumeration;
 import java.util.Vector;

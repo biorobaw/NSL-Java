@@ -15,9 +15,9 @@
  *
  * @see NslMultiClockScheduler
  */
-package nslj.src.system;
+package system;
 
-import nslj.src.lang.NslModule;
+import lang.NslModule;
 
 import java.util.Enumeration;
 import java.util.Vector;

@@ -4,7 +4,7 @@
  *Copyright(c) 1997 USC Brain Project. email nsl@java.usc.edu
  */
 
-package nslj.src.display;
+package display;
 
 import java.io.*;
 import java.util.Properties;

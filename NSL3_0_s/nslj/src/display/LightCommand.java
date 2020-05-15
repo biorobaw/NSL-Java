@@ -14,9 +14,9 @@
 //
 //////////////////////////////////////////////////////////////////////
 
-package nslj.src.display;
+package display;
 
-import nslj.src.nsls.struct.NslCommand;
+import nsls.struct.NslCommand;
 
 import javax.media.j3d.DirectionalLight;
 import javax.media.j3d.TransformGroup;

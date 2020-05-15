@@ -41,9 +41,9 @@
 
 ////////////////////////////////////////////////////////////////////////////////
 // sigmoid functions
-package nslj.src.math;
+package math;
 
-import nslj.src.lang.*;
+import lang.*;
 
 @SuppressWarnings("unused")
 public final class NslSigmoid2 {

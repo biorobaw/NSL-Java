@@ -5,11 +5,11 @@
 // Copyright: COPYRIGHT file is included with each such copy.
 // Copyright: Email nsl@java.usc.edu.
 
-package nslj.src.display;
+package display;
 
-import nslj.src.lang.NslNumeric0;
-import nslj.src.lang.NslNumeric1;
-import nslj.src.lang.NslNumeric2;
+import lang.NslNumeric0;
+import lang.NslNumeric1;
+import lang.NslNumeric2;
 
 import java.awt.*;
 import java.awt.event.ActionEvent;

@@ -1,14 +1,15 @@
+package model;
 /* Mdulo NSL que representa la necesidad de comer de la rata.
    Alejandra Barrera
    Versin: 1
    Fecha: 11 de febrero de 2005
  */
 
-import nslj.src.system.*;
-import nslj.src.cmd.*;
-import nslj.src.lang.*;
-import nslj.src.math.*;
-import nslj.src.display.*;
+import system.*;
+import cmd.*;
+import lang.*;
+import math.*;
+import display.*;
 import java.lang.*;
 
 public class Drive extends NslModule {

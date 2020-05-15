@@ -5,7 +5,7 @@
 // Copyright: COPYRIGHT file is included with each such copy.
 // Copyright: Email nsl@java.usc.edu.
 
-package nslj.src.lang;
+package lang;
 
 @SuppressWarnings("unused")
 public class NslDoutDouble0 extends NslDouble0 {

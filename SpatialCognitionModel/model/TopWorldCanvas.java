@@ -1,3 +1,4 @@
+package model;
 import javax.media.j3d.Canvas3D;
 import java.io.*;
 import javax.media.j3d.*;

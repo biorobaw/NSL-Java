@@ -1,10 +1,5 @@
-/*
-	Clase que representa un arco del mapa topol�gico del
-	ambiente.
-	Versi�n 1
-	Alejandra Barrera
-	Fecha de creaci�n: abril 7, 2005.
-*/
+package model;
+
 
 public class Edge
 {

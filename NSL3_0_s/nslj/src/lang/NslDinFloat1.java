@@ -11,7 +11,7 @@
 /**
  * NslDinFloat1 - single precision floating point one dimensional array
  */
-package nslj.src.lang;
+package lang;
 
 
 @SuppressWarnings("unused")

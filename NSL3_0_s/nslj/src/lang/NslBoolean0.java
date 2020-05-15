@@ -13,7 +13,7 @@
  * NslBoolean0 - boolean scalar
  */
 
-package nslj.src.lang;
+package lang;
 
 @SuppressWarnings({"unused", "finally", "ReturnInsideFinallyBlock", "Duplicates"})
 public class NslBoolean0 extends NslBoolean {

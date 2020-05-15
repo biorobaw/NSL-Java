@@ -11,7 +11,7 @@
 /**
  * NslDouble1 - double precision floating point one dimensional array
  */
-package nslj.src.lang;
+package lang;
 
 @SuppressWarnings({"unused", "Duplicates", "finally", "ReturnInsideFinallyBlock"})
 public class NslDouble1 extends NslNumeric1 {

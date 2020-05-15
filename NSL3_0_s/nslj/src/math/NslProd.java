@@ -26,9 +26,9 @@
  */
 
 
-package nslj.src.math;
+package math;
 
-import nslj.src.lang.*;
+import lang.*;
 
 
 //public final class NslProd {  //99/6/24 aa: new long name

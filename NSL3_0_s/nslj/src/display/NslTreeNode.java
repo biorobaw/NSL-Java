@@ -11,7 +11,7 @@
 //--------------------------------------
 
 
-package nslj.src.display;
+package display;
 
 //import TreeNode;
 //import Tree;

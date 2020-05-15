@@ -25,11 +25,11 @@
  * NslCopyColumn always returns a vector.
  */
 
-package nslj.src.math;
+package math;
 
 //import java.util.Arrays;
 
-import nslj.src.lang.*;
+import lang.*;
 
 @SuppressWarnings({"unused", "ParameterCanBeLocal", "Duplicates"})
 public final class NslCopyColumn {

@@ -21,7 +21,7 @@
 /**
  * Input ports of a nsl module
  */
-package nslj.src.lang;
+package lang;
 
 @SuppressWarnings({"WeakerAccess", "ConstantConditions"})
 public class NslInport extends NslPort {

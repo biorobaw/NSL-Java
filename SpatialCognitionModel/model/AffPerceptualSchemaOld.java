@@ -1,14 +1,15 @@
+package model;
 /* Módulo que gerera el esquema perceptual de
    affordances.	
    Alejandra Barrera
    Versión: 1 (enero, 2005)
  */
 
-import nslj.src.system.*;
-import nslj.src.cmd.*;
-import nslj.src.lang.*;
-import nslj.src.math.*;
-import nslj.src.display.*;
+import system.*;
+import cmd.*;
+import lang.*;
+import math.*;
+import display.*;
 import java.lang.*;
 
 public class AffPerceptualSchemaOld extends NslModule {

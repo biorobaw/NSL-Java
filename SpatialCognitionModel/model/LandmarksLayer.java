@@ -1,3 +1,4 @@
+package model;
 /* Módulo NSL que representa una capa de neuronas cuya activación representa 
    la influencia conjunta que ejercen todas las landmarks que se encuentra en la 
    vista actual de la rata.
@@ -8,11 +9,11 @@
    Fecha: 14 de agosto de 2006
 */
 
-import nslj.src.system.*; 
-import nslj.src.cmd.*; 
-import nslj.src.lang.*; 
-import nslj.src.math.*; 
-import nslj.src.display.*; 
+import system.*; 
+import cmd.*; 
+import lang.*; 
+import math.*; 
+import display.*; 
 import java.lang.*;
 import java.util.Random;
 import java.io.*;

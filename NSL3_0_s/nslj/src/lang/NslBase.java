@@ -34,7 +34,7 @@
  * not have reflection.
  */
 
-package nslj.src.lang;
+package lang;
 
 //import EDU.gatech.cc.is.abstractrobot.*;extends ControlSystemMFN150
 @SuppressWarnings("WeakerAccess")

@@ -24,10 +24,10 @@
 /**
  * Differentiation methods. Refer to nsl_diff_method.C in NSL2.8
  */
-package nslj.src.math;
+package math;
 
-import nslj.src.lang.*;
-import nslj.src.system.NslSystem;
+import lang.*;
+import system.NslSystem;
 
 @SuppressWarnings({"WeakerAccess", "UnusedAssignment", "Duplicates"})
 public abstract class NslDiff {

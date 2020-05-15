@@ -15,9 +15,9 @@
 //
 //--------------------------------------
 
-package nslj.src.display;
+package display;
 
-import nslj.src.lang.NslData;
+import lang.NslData;
 
 import java.awt.*;
 import java.awt.event.MouseAdapter;
@@ -333,8 +333,8 @@ public class NslCanvas extends Canvas {
         NslCanvas ndc = null;
 
         try {
-            String frameType = "nslj.src.display.NslFrame";
-            String canvasType = "nslj.src.display.Nsl" + graph_type_name + "Canvas";
+            String frameType = "display.NslFrame";
+            String canvasType = "display.Nsl" + graph_type_name + "Canvas";
 
             Class frameClass = Class.forName(frameType);
             Class canvasClass = Class.forName(canvasType);

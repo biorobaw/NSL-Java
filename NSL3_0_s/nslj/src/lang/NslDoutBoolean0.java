@@ -8,7 +8,7 @@
 // NslDoutBoolean0.java
 ////////////////////////////////////////////////////////////////////////////////
 
-package nslj.src.lang;
+package lang;
 
 @SuppressWarnings("unused")
 public class NslDoutBoolean0 extends NslBoolean0 {

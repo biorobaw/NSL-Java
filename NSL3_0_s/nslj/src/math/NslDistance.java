@@ -12,7 +12,7 @@
 //
 //
 
-package nslj.src.math;
+package math;
 
 /**
  * Distance routines.

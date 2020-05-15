@@ -11,7 +11,7 @@
 /**
  * NslDouble0 - double precision floating point number
  */
-package nslj.src.lang;
+package lang;
 
 @SuppressWarnings({"RedundantCast", "finally", "ReturnInsideFinallyBlock", "unused", "Duplicates"})
 public class NslDouble0 extends NslNumeric0 {

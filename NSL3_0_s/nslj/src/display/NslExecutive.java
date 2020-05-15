@@ -5,13 +5,13 @@
 // Copyright: COPYRIGHT file is included with each such copy.
 // Copyright: Email nsl@java.usc.edu.
 
-package nslj.src.display;
+package display;
 
-import nslj.src.cmd.NslThreadCommands;
-import nslj.src.lang.*;
-import nslj.src.nsls.struct.Executive;
-import nslj.src.nsls.struct.NslShell;
-import nslj.src.system.NslSystem;
+import cmd.NslThreadCommands;
+import lang.*;
+import nsls.struct.Executive;
+import nsls.struct.NslShell;
+import system.NslSystem;
 
 import java.awt.*;
 import java.awt.datatransfer.*;

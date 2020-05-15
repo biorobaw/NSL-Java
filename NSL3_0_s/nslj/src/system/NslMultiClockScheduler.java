@@ -30,11 +30,11 @@
  *
  * @see NslModule#nslSetRunDelta, NslModule#nslGetRunDelta
  */
-package nslj.src.system;
+package system;
 
-import nslj.src.display.NslDisplaySystemVector;
-import nslj.src.lang.NslClass;
-import nslj.src.lang.NslModule;
+import display.NslDisplaySystemVector;
+import lang.NslClass;
+import lang.NslModule;
 
 import java.util.Enumeration;
 import java.util.Vector;

@@ -1,13 +1,13 @@
 package support;
 
 
-import graph.Edge;
-import graph.NodeMap;
-
 import java.io.*;
 import java.util.Hashtable;
 import java.util.LinkedList;
 import java.util.List;
+
+import model.Edge;
+import model.NodeMap;
 
 /* 
  * PajekFormat.java
@@ -41,7 +41,7 @@ public class PajekFormat {
 		PrintWriter pw=null;
 		int iterNodos, iterAsistas;
 		NodeMap nodo;
-		Edge arista;
+		Edge arista; 
 		Hashtable<Integer, Integer> secNumberNodes = new Hashtable<Integer, Integer>(); // Pajek obliga a que los nombres de los nodos vayan de 1 a n, y en la lista esto no es asi
 		
 		/* Pajek no permite que nos nombres de los nodos sean 0 por eso suma uno por todos lados */

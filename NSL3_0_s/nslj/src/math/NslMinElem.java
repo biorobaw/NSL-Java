@@ -20,9 +20,9 @@
  * and the result is passed out as an array of indexes i
  */
 
-package nslj.src.math;
+package math;
 
-import nslj.src.lang.*;
+import lang.*;
 
 
 @SuppressWarnings("Duplicates")

@@ -15,10 +15,10 @@
 //
 //--------------------------------------
 
-package nslj.src.display;
+package display;
 
-import nslj.src.nsls.struct.Executive;
-import nslj.src.system.NslSystem;
+import nsls.struct.Executive;
+import system.NslSystem;
 import tcl.lang.*;
 
 import java.awt.*;

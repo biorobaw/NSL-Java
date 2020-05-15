@@ -7,9 +7,9 @@
 
 ////////////////////////////////////////////////////////////////////////////////
 // NslDouble2.java
-package nslj.src.lang;
+package lang;
 //import tcl.lang.*;
-//import nslj.src.math.NslSigmoid;
+//import math.NslSigmoid;
 
 @SuppressWarnings({"unused", "Duplicates", "UnusedAssignment", "finally", "ReturnInsideFinallyBlock"})
 public class NslDouble2 extends NslNumeric2 {
@@ -774,12 +774,12 @@ public double sum() {
 
 ///** Threshold functions */
  /* public double[][] sigmoid(){
-    return nslj.src.math.NslSigmoid.eval(this);
+    return math.NslSigmoid.eval(this);
   }
 
 
   public double[][] sigmoid(double kx1, double kx2, double ky1, double ky2 ) {
-    return nslj.src.math.NslSigmoid.eval(this, kx1, kx2, ky1, ky2);
+    return math.NslSigmoid.eval(this, kx1, kx2, ky1, ky2);
   }  */
 
 }

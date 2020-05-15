@@ -8,7 +8,7 @@
 // NslDoutDouble1.java
 ////////////////////////////////////////////////////////////////////////////////
 
-package nslj.src.lang;
+package lang;
 
 @SuppressWarnings("unused")
 public class NslDoutDouble1 extends NslDouble1 {

@@ -1,10 +1,11 @@
+package model;
 /* Mdulo que gerera el esquema perceptual de affordances.	
    Alejandra Barrera Versin: 1 (enero, 2005)
    Gonzalo Tejera Versin: 1.2 (agosto, 2009)
  */
 
 import robot.IRobot;
-import nslj.src.lang.*;
+import lang.*;
 
 public class AffPerceptualSchema extends NslModule {
 	/*

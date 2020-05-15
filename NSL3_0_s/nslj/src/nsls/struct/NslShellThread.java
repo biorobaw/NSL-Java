@@ -10,9 +10,9 @@
  * @author Nikunj Mehta
  */
 
-package nslj.src.nsls.struct;
+package nsls.struct;
 
-import nslj.src.system.NslSystem;
+import system.NslSystem;
 
 import java.awt.*;
 

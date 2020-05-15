@@ -26,9 +26,9 @@
 
 ////////////////////////////////////////////////////////////////////////////////
 // step functions
-package nslj.src.math;
+package math;
 
-import nslj.src.lang.*;
+import lang.*;
 
 @SuppressWarnings({"unused", "Duplicates"})
 public final class NslGaussian {

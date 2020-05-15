@@ -23,9 +23,9 @@
  * NslScheduler - The scheduler interface.
  */
 
-package nslj.src.system;
+package system;
 
-import nslj.src.lang.NslModule;
+import lang.NslModule;
 
 @SuppressWarnings({"unused", "WeakerAccess"})
 public abstract class NslScheduler extends Thread {

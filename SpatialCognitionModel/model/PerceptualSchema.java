@@ -1,3 +1,4 @@
+package model;
 /* Clase que representa a un esquema perceptual gen�rico.
    Alejandra Barrera
    Versi�n: 1

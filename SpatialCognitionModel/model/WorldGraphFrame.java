@@ -1,3 +1,4 @@
+package model;
 /*
   Clase que representa el frame en que se desplegar� el
   mapa del ambiente.

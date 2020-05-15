@@ -28,10 +28,10 @@
 //
 //////////////////////////////////////////////////////////////////////
 
-package nslj.src.cmd;
+package cmd;
 
 
-import nslj.src.system.NslSystem;
+import system.NslSystem;
 
 import java.util.StringTokenizer;
 

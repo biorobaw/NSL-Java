@@ -37,7 +37,7 @@
  * @version 1.01 15 Feb 1996
  * @author Cay Horstmann
  */
-package nslj.src.system;
+package system;
 
 @SuppressWarnings({"WeakerAccess", "unused"})
 public class Console {

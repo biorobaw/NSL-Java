@@ -34,10 +34,10 @@
  * not have reflection.
  */
 
-package nslj.src.lang;
+package lang;
 
-import nslj.src.nsls.struct.Executive;
-import nslj.src.system.NslSystem;
+import nsls.struct.Executive;
+import system.NslSystem;
 import tcl.lang.*;
 
 import java.util.Enumeration;

@@ -10,10 +10,9 @@ import java.util.Collections;
 import java.util.Hashtable;
 import java.util.Random;
 
+import model.RobotFactory;
+
 import java.awt.geom.Point2D.Double;
-
-import RobotFactory;
-
 import java.awt.geom.Point2D;
 import java.awt.geom.Point2D.Double;
 

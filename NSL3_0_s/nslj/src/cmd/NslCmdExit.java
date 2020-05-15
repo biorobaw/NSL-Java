@@ -24,12 +24,12 @@
 // NslCmdExit.java
 //
 //////////////////////////////////////////////////////////////////////
-package nslj.src.cmd;
+package cmd;
 /**
  * exit NSL
  */
 
-import nslj.src.lang.NslModule;
+import lang.NslModule;
 
 import java.util.StringTokenizer;
 

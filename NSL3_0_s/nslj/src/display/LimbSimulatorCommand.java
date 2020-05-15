@@ -15,10 +15,10 @@
 //////////////////////////////////////////////////////////////////////
 
 
-package nslj.src.display;
+package display;
 
 import com.sun.j3d.utils.universe.SimpleUniverse;
-import nslj.src.nsls.struct.NslCommand;
+import nsls.struct.NslCommand;
 
 import javax.media.j3d.*;
 import javax.vecmath.Color3f;

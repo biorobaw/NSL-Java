@@ -16,7 +16,7 @@
  * The NslPort class is a subclass of NslNumeric.
  */
 
-package nslj.src.lang;
+package lang;
 
 public abstract class NslBoolean
         extends NslData {

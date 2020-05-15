@@ -8,7 +8,7 @@
 // NslDinBoolean0.java
 ////////////////////////////////////////////////////////////////////////////////
 
-package nslj.src.lang;
+package lang;
 
 @SuppressWarnings("unused")
 public class NslDinBoolean0 extends NslBoolean0 {

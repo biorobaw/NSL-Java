@@ -5,11 +5,11 @@
 // Copyright: COPYRIGHT file is included with each such copy.
 // Copyright: Email nsl@java.usc.edu.
 
-package nslj.src.nsls.struct;
+package nsls.struct;
 
-import nslj.src.display.NslColor;
-import nslj.src.display.NslDisplaySystem;
-import nslj.src.display.NslFrame;
+import display.NslColor;
+import display.NslDisplaySystem;
+import display.NslFrame;
 import tcl.lang.*;
 
 @SuppressWarnings({"Duplicates", "UnusedAssignment", "unused"})

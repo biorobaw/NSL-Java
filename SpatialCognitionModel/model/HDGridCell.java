@@ -1,3 +1,4 @@
+package model;
 /* Clase que implementa los disparos de una celda grilla direccional basado en las
    propuestas de Burgess2007 y Hasselmo2005.
    Gonzalo Tejera

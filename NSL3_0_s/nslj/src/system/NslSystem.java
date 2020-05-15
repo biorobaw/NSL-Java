@@ -18,15 +18,15 @@
 // 99/6/28 got rid of other instance of math classes 
 // except things related to differential method: setApproximationMethod stuff
 
-package nslj.src.system;
+package system;
 
-import nslj.src.cmd.NslCmd;
-import nslj.src.display.*;
-import nslj.src.lang.*;
-import nslj.src.math.NslDiff;
-import nslj.src.math.NslDiffEuler;
-import nslj.src.nsls.struct.Executive;
-import nslj.src.nsls.struct.NslCommand;
+import cmd.NslCmd;
+import display.*;
+import lang.*;
+import math.NslDiff;
+import math.NslDiffEuler;
+import nsls.struct.Executive;
+import nsls.struct.NslCommand;
 import tcl.lang.*;
 
 import java.lang.reflect.Constructor;
@@ -1838,7 +1838,7 @@ public NslModule _nslGetModuleRef(String name) {
             Class<NslCommand> commandType = (Class<NslCommand>) Class.forName(className);
             Class[] paramTypes = new Class[2];
             paramTypes[0] = Class.forName("java.lang.String");
-            paramTypes[1] = Class.forName("nslj.src.lang.NslModule");
+            paramTypes[1] = Class.forName("lang.NslModule");
             Constructor<NslCommand> commandConstructor = commandType.getConstructor(paramTypes);
             Object[] params = new Object[2];
             params[0] = null;

@@ -7,7 +7,7 @@
 
 ////////////////////////////////////////////////////////////////////////////////
 // NslDouble3.java
-package nslj.src.lang;
+package lang;
 
 @SuppressWarnings({"Duplicates", "UnusedAssignment", "DanglingJavadoc", "unused", "finally", "ReturnInsideFinallyBlock"})
 public class NslDouble3 extends NslNumeric3 {

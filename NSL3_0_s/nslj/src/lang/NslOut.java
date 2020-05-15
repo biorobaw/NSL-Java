@@ -5,10 +5,10 @@
 // Copyright: COPYRIGHT file is included with each such copy.
 // Copyright: Email nsl@java.usc.edu.
 
-package nslj.src.lang;
+package lang;
 
-import nslj.src.nsls.struct.Executive;
-import nslj.src.system.NslSystem;
+import nsls.struct.Executive;
+import system.NslSystem;
 
 import java.io.OutputStream;
 import java.io.PrintStream;

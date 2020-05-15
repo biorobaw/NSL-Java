@@ -13,9 +13,9 @@
  * to be filled row by row by the single vector input.
  * Thus R[i][j]=I[j].
  */
-package nslj.src.math;
+package math;
 
-import nslj.src.lang.*;
+import lang.*;
 
 
 @SuppressWarnings({"Duplicates", "unused"})

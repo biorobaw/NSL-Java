@@ -12,7 +12,7 @@
 /**
  * NslInt0 -integer number
  */
-package nslj.src.lang;
+package lang;
 
 @SuppressWarnings({"finally", "ReturnInsideFinallyBlock", "unused", "Duplicates"})
 public class NslInt0 extends NslNumeric0 {

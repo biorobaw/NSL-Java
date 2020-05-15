@@ -10,12 +10,14 @@
 //
 //////////////////////////////////////////////////////////////////////
 
-import nslj.src.system.*;
-import nslj.src.cmd.*;
-import nslj.src.lang.*;
-import nslj.src.math.*;
-import nslj.src.display.*;
-import nslj.src.exceptions.*;
+package main;
+
+import system.*;
+import cmd.*;
+import lang.*;
+import math.*;
+import display.*;
+import exceptions.*;
 
 /**
  * The main routine.

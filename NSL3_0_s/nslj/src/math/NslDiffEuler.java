@@ -28,9 +28,9 @@
  **/
 
 
-package nslj.src.math;
+package math;
 
-import nslj.src.system.NslSystem;
+import system.NslSystem;
 
 /**
  * Euler's Differentiation methods

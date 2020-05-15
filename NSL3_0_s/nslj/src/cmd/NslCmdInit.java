@@ -13,16 +13,16 @@
 /**
  * initialize current / a specific model/module
  */
-package nslj.src.cmd;
+package cmd;
 
-import nslj.src.lang.NslModule;
-import nslj.src.system.NslSystem;
+import lang.NslModule;
+import system.NslSystem;
 
 import java.util.Enumeration;
 import java.util.StringTokenizer;
 import java.util.Vector;
 
-//import nslj.src.lang.NslEnv;
+//import lang.NslEnv;
 
 public class NslCmdInit extends NslCmd {
     /**

@@ -10,9 +10,9 @@
 // adapted new nsls structure
 //
 
-package nslj.src.nsls.struct;
+package nsls.struct;
 
-//aa note: no nslj.src.nsls.jacl here because
+//aa note: no nsls.jacl here because
 // the cornell files expect cornell to be first
 // and we did not want to remake them
 
@@ -20,8 +20,8 @@ package nslj.src.nsls.struct;
 // import cornell.Jacl.*;
 // import cornell.Tcl.*;
 
-import nslj.src.system.NslInterpreter;
-import nslj.src.system.NslSystem;
+import system.NslInterpreter;
+import system.NslSystem;
 import tcl.lang.Interp;
 import tcl.lang.TCL;
 import tcl.lang.TclException;

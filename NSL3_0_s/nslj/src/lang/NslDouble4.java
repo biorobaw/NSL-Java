@@ -7,7 +7,7 @@
 
 ////////////////////////////////////////////////////////////////////////////////
 // NslDouble4.java
-package nslj.src.lang;
+package lang;
 
 @SuppressWarnings({"Duplicates", "UnusedAssignment", "unused", "finally", "ReturnInsideFinallyBlock", "RedundantCast", "SuspiciousSystemArraycopy"})
 public class NslDouble4 extends NslNumeric4 {
@@ -1241,12 +1241,12 @@ public void getNslSizes(NslInt0 size1, NslInt0 size2, NslInt0 size3, NslInt0 siz
 
 
 /*  public double[][][][] sigmoid(){
-    return nslj.src.math.NslSigmoid.eval(this);
+    return math.NslSigmoid.eval(this);
   }
 */
 /*
   public double[][][][] sigmoid(double kx1, double kx2, double ky1, double ky2) {
-    return nslj.src.math.NslSigmoid.eval(this, kx1, kx2, ky1, ky2);
+    return math.NslSigmoid.eval(this, kx1, kx2, ky1, ky2);
   }
 */
 

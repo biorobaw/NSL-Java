@@ -8,7 +8,7 @@
 // NslDinDouble4.java
 ////////////////////////////////////////////////////////////////////////////////
 
-package nslj.src.lang;
+package lang;
 
 @SuppressWarnings("unused")
 public class NslDinDouble4 extends NslDouble4 {

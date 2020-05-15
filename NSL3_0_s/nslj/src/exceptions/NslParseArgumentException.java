@@ -10,7 +10,7 @@
 //
 //////////////////////////////////////////////////////////////////////
 
-package nslj.src.exceptions;
+package exceptions;
 
 public class NslParseArgumentException extends Exception {
 

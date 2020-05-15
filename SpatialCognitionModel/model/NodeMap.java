@@ -1,8 +1,5 @@
-/* Clase que representa un nodo del mapa topol�gico del
-   ambiente.
-   Alejandra Barrera
-   Fecha de creaci�n: abril 7, 2005.
- */
+package model;
+
 
 import java.awt.Color;
 import java.awt.Graphics;
@@ -21,7 +18,7 @@ public class NodeMap {
 	public int wg_y;
 	public LinkedList<Edge> pointerWGtoWG; // lista de aristas
     double[] w;
-    double[] e;
+    public double[] e;
 	private double globalX, globalY; // coordenadas globales, porque no usa
 										// globales para dibujar (wg_x, wg_y)
 

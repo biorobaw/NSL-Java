@@ -9,7 +9,7 @@
 ////////////////////////////////////////////////////////////////////////////////
 
 
-package nslj.src.lang;
+package lang;
 
 @SuppressWarnings("unused")
 public class NslDoutFloat0 extends NslFloat0 {

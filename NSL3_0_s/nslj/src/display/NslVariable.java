@@ -16,10 +16,10 @@
 //--------------------------------------
 
 
-package nslj.src.display;
+package display;
 
-import nslj.src.lang.*;
-import nslj.src.system.NslSystem;
+import lang.*;
+import system.NslSystem;
 
 
 /**

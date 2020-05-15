@@ -1,3 +1,4 @@
+package model;
 /* Mdulo NSL que implementa el modelo de cognicin espacial.
    Alejandra Barrera
    Versin: 1
@@ -10,8 +11,8 @@ import java.lang.reflect.InvocationTargetException;
 
 import robot.SpatialCognitionInterfaceOpenCV;
 
-import nslj.src.lang.NslModel;
-import nslj.src.lang.NslModule;
+import lang.NslModel;
+import lang.NslModule;
 
 public class WGModel extends NslModel {
 	private World world;
@@ -46,11 +47,11 @@ public class WGModel extends NslModel {
 
 	public WGModel(String nslName, NslModel nslModel) {
 		super(nslName, nslModel);
-		if (nslj.src.main.NslMain.TopLoaded) {
+		if (main.NslMain.TopLoaded) {
 			System.err.println("ERROR: construction without (name,parent)");
 			System.exit(1);
 		}
-		nslj.src.main.NslMain.TopLoaded = true;
+		main.NslMain.TopLoaded = true;
 
 		world = new World("world", this, COMPACT_IMAGE_HEIGHT, COMPACT_IMAGE_WIDTH, INITIAL_RAT_HEAD_ANGLE);
 		System.out.println("WGModel::World ... OK");

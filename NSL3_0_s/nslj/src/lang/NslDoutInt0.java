@@ -8,7 +8,7 @@
 // NslDoutInt.java
 ////////////////////////////////////////////////////////////////////////////////
 
-package nslj.src.lang;
+package lang;
 
 @SuppressWarnings("unused")
 public class NslDoutInt0 extends NslInt0 {

@@ -5,12 +5,12 @@
 // Copyright: COPYRIGHT file is included with each such copy.
 // Copyright: Email nsl@java.usc.edu.
 
-package nslj.src.nsls.struct;
+package nsls.struct;
 
 
-import nslj.src.lang.NslHierarchy;
-import nslj.src.lang.NslModule;
-import nslj.src.system.NslSystem;
+import lang.NslHierarchy;
+import lang.NslModule;
+import system.NslSystem;
 import tcl.lang.*;
 
 @SuppressWarnings({"WeakerAccess", "unused", "Duplicates", "finally", "ReturnInsideFinallyBlock"})

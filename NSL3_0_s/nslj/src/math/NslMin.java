@@ -39,7 +39,7 @@
  * The method returns the reference to <tt>dest</tt>.
  */
 
-package nslj.src.math;
+package math;
 
 @SuppressWarnings({"Duplicates", "unused"})
 public final class NslMin {

@@ -6,7 +6,7 @@
 // Copyright: Email nsl@java.usc.edu.
 
 
-package nslj.src.lang;
+package lang;
 
 @SuppressWarnings({"WeakerAccess", "unused"})
 public class NslInDummyModule extends NslInModule {

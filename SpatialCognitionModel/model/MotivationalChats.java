@@ -1,3 +1,4 @@
+package model;
 /* Clase que permite visualizar los esquemas motivacionales perceptuales APS, RPS, CSP, MPS y SPS. 
    Gonzalo Tejera
    Version: 1

@@ -25,11 +25,11 @@
  * NslSumRows always returns a double.
  */
 
-package nslj.src.math;
+package math;
 
 //import java.util.Arrays;
 
-import nslj.src.lang.*;
+import lang.*;
 
 @SuppressWarnings({"ParameterCanBeLocal", "unused", "Duplicates", "ConstantConditions"})
 public final class NslSumRows {

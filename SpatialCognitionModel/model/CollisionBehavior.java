@@ -1,3 +1,4 @@
+package model;
 import javax.media.j3d.*;
 
 public class CollisionBehavior extends Behavior {

@@ -37,9 +37,9 @@
 
 ////////////////////////////////////////////////////////////////////////////////
 // step functions
-package nslj.src.math;
+package math;
 
-import nslj.src.lang.*;
+import lang.*;
 
 @SuppressWarnings({"Duplicates", "unused"})
 public final class NslStep {

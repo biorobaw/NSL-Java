@@ -5,7 +5,7 @@
 // Copyright: COPYRIGHT file is included with each such copy.
 // Copyright: Email nsl@java.usc.edu.
 
-package nslj.src.math;
+package math;
 
 @SuppressWarnings("unused")
 public final class NslTranspose extends NslTrans {

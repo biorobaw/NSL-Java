@@ -11,7 +11,7 @@
 //
 //
 
-package nslj.src.math;
+package math;
 
 /**
  * Maximum number merging routines.

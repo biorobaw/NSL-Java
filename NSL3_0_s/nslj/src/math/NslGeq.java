@@ -24,9 +24,9 @@
  * The method returns the reference to <tt>dest</tt>.
  */
 
-package nslj.src.math;
+package math;
 
-import nslj.src.lang.*;
+import lang.*;
 
 
 @SuppressWarnings({"ConstantConditions", "unused", "Duplicates"})

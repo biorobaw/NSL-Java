@@ -1,4 +1,4 @@
-package nslj.src.display;
+package display;
 
 import java.io.File;
 import java.io.FilenameFilter;

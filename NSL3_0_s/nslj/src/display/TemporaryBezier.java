@@ -17,7 +17,7 @@
  */
 
 
-package nslj.src.display;
+package display;
 
 
 import java.awt.*;

@@ -8,7 +8,7 @@
 ////////////////////////////////////////////////////////////////////////////////
 // NslInt4.java
 
-package nslj.src.lang;
+package lang;
 
 
 @SuppressWarnings({"Duplicates", "UnusedAssignment", "unused", "finally", "ReturnInsideFinallyBlock"})

@@ -10,7 +10,7 @@
  * @author Nikunj Mehta
  */
 
-package nslj.src.nsls.struct;
+package nsls.struct;
 
 import java.util.Vector;
 

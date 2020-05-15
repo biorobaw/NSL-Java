@@ -15,11 +15,11 @@
 //
 //--------------------------------------
 
-package nslj.src.display;
+package display;
 
-import nslj.src.lang.NslModule;
-import nslj.src.lang.NslNumeric;
-import nslj.src.system.NslSystem;
+import lang.NslModule;
+import lang.NslNumeric;
+import system.NslSystem;
 
 import java.awt.*;
 import java.awt.event.ActionEvent;

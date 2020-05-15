@@ -14,9 +14,9 @@
  * initialize all modules
  */
 
-package nslj.src.cmd;
+package cmd;
 
-import nslj.src.system.NslScheduler;
+import system.NslScheduler;
 
 import java.util.StringTokenizer;
 

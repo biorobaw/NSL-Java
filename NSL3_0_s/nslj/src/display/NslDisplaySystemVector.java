@@ -6,7 +6,7 @@
  * @author Nikunj Mehta
  */
 
-package nslj.src.display;
+package display;
 
 import java.util.Vector;
 

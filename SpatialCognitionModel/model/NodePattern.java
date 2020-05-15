@@ -1,3 +1,4 @@
+package model;
 import java.util.Arrays;
 
 /* Clase que representa un nodo de la lista de patrones de

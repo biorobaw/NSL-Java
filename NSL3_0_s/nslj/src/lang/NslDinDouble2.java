@@ -11,7 +11,7 @@
 // NslDinDouble2.java
 ////////////////////////////////////////////////////////////////////////////////
 
-package nslj.src.lang;
+package lang;
 
 @SuppressWarnings("unused")
 public class NslDinDouble2 extends NslDouble2 {

@@ -8,7 +8,7 @@
 ////////////////////////////////////////////////////////////////////////////////
 // NslFloat4.java
 
-package nslj.src.lang;
+package lang;
 
 
 @SuppressWarnings({"unused", "Duplicates", "UnusedAssignment", "SuspiciousSystemArraycopy", "finally", "ReturnInsideFinallyBlock"})

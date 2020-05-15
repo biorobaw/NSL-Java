@@ -39,11 +39,11 @@
  * Inport       Outport
  */
 
-package nslj.src.lang;
+package lang;
 
-import nslj.src.display.NslFrame;
-import nslj.src.math.NslDiff;
-import nslj.src.system.NslSystem;
+import display.NslFrame;
+import math.NslDiff;
+import system.NslSystem;
 
 import java.util.Enumeration;
 import java.util.Vector;

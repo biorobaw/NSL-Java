@@ -13,7 +13,7 @@
  * NslBoolean2 - boolean vector
  */
 
-package nslj.src.lang;
+package lang;
 
 @SuppressWarnings({"Duplicates", "finally", "ReturnInsideFinallyBlock", "unused", "UnusedAssignment"})
 public class NslBoolean2 extends NslBoolean {

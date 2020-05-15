@@ -44,9 +44,9 @@ NSL 2.1. 7 used <= instead of < a lot of places
 
 ////////////////////////////////////////////////////////////////////////////////
 // sigmoid functions
-package nslj.src.math;
+package math;
 
-import nslj.src.lang.*;
+import lang.*;
 
 @SuppressWarnings({"unused", "Duplicates"})
 public final class Nsl2Sigmoid {

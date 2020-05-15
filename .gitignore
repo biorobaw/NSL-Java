@@ -15,3 +15,5 @@ out
 .classpath
 .settings
 .project
+/.metadata/
+/.recommenders/

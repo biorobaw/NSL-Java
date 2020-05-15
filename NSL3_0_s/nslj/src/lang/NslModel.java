@@ -34,7 +34,7 @@
  * Calls child modules.
  */
 
-package nslj.src.lang;
+package lang;
 
 abstract public class NslModel extends NslModule {
 

@@ -1,3 +1,4 @@
+package model;
 /* Clase que representa la arquitectura Actor-Critic
    involucrada en el aprendizaje por reforzamiento.
    Alejandra Barrera

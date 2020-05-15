@@ -1,3 +1,4 @@
+package model;
 /* Mdulo NSL que construye los esquemas perceptuales de los landmarks incluidos
    en la vista actual de la rata. Tales esquemas codifican la distancia y el
    ngulo hacia el landmark en cuestin.
@@ -8,7 +9,7 @@
 
 import java.util.Arrays;
 
-import nslj.src.lang.*;
+import lang.*;
 
 public class LandmarksPerceptualSchema extends NslModule {
 	public NslDinDouble1 distLandmarks;

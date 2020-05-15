@@ -1,3 +1,4 @@
+package model;
 /*
  * World.java
  * Este mdulo sirve de interfaz entre el ambiente virtual y el modelo.
@@ -23,7 +24,7 @@ import javax.management.OperationsException;
 import javax.vecmath.Point3d;
 import javax.vecmath.Point4d;
 
-import nslj.src.lang.*;
+import lang.*;
 
 public class World extends NslModule {
 	public NslDinInt0 newHeadAngleRat;

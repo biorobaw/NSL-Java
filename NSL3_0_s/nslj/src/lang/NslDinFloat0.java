@@ -12,7 +12,7 @@
 /**
  * NslDinFloat0 - single precision floating point number
  */
-package nslj.src.lang;
+package lang;
 
 @SuppressWarnings("unused")
 public class NslDinFloat0 extends NslFloat0 {

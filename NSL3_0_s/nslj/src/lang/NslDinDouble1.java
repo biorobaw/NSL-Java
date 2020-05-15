@@ -9,7 +9,7 @@
 ////////////////////////////////////////////////////////////////////////////////
 
 
-package nslj.src.lang;
+package lang;
 
 @SuppressWarnings("unused")
 public class NslDinDouble1 extends NslDouble1 {

@@ -5,7 +5,7 @@
 // Copyright: COPYRIGHT file is included with each such copy.
 // Copyright: Email nsl@java.usc.edu.
 
-package nslj.src.display;
+package display;
 
 import java.awt.*;
 import java.awt.event.MouseAdapter;
@@ -139,14 +139,14 @@ finally {
             if (plotType.equals("Temporal")) {
                 variableInfo.setHistory(true);
             }
-            typeName = "nslj.src.display.Nsl" + plotType + "Canvas";
+            typeName = "display.Nsl" + plotType + "Canvas";
             Class<NslCanvas> canvasType = (Class<NslCanvas>) Class.forName(typeName);
 
             // todo: do we really need paramTypes?
             Class[] paramTypes = new Class[3];
-            paramTypes[0] = Class.forName("nslj.src.display.NslFrame");
+            paramTypes[0] = Class.forName("display.NslFrame");
             paramTypes[1] = Class.forName("java.lang.String");
-            paramTypes[2] = Class.forName("nslj.src.display.NslVariableInfo");
+            paramTypes[2] = Class.forName("display.NslVariableInfo");
 
             Constructor<NslCanvas> canvasConstructor = canvasType.getConstructor(paramTypes);
 
@@ -226,9 +226,9 @@ finally {
             //System.err.println("Creating canvas: "+variableName);
             Class[] paramTypes = new Class[4];
             paramTypes[0] = Class.forName("java.lang.String");
-            paramTypes[1] = Class.forName("nslj.src.lang.NslModule");
-            paramTypes[2] = Class.forName("nslj.src.display.NslFrame");
-            paramTypes[3] = Class.forName("nslj.src.display.NslVariableInfo");
+            paramTypes[1] = Class.forName("lang.NslModule");
+            paramTypes[2] = Class.forName("display.NslFrame");
+            paramTypes[3] = Class.forName("display.NslVariableInfo");
             Constructor<NslCanvas> canvasConstructor = canvasType.getConstructor(paramTypes);
             Object[] params = new Object[4];
             params[0] = variableName;
@@ -397,9 +397,9 @@ finally {
                     canvasList.elementAt(indexOfCurrentCanvas);
             String canvasName = c.getClass().getName();
             NslCanvas tmp = null;
-            if (canvasName.equals("nslj.src.display.NslTemporalCanvas")) {
+            if (canvasName.equals("display.NslTemporalCanvas")) {
                 tmp = c.copy("Temporal");
-            } else if (canvasName.equals("nslj.src.display.NslAreaCanvas")) {
+            } else if (canvasName.equals("display.NslAreaCanvas")) {
                 tmp = c.copy("Area");
             } else {
                 System.err.println("NslPanel:Error: Only know how to Zoom Temporal or Area Level graphs.");

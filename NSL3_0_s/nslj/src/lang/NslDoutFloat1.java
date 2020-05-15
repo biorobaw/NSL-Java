@@ -8,7 +8,7 @@
 // NslDoutFloat1.java
 ////////////////////////////////////////////////////////////////////////////////
 
-package nslj.src.lang;
+package lang;
 
 @SuppressWarnings("unused")
 public class NslDoutFloat1 extends NslFloat1 {

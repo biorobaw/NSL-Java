@@ -1,3 +1,4 @@
+package model;
 /* Clase que representa una dirección de un nodo del mapa
    topológico. Su finalidad es la de soportar el despliegue
    gráfico de los nodos del mapa.

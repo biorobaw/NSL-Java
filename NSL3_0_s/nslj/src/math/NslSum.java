@@ -25,9 +25,9 @@
  * NslSum always returns a double.
  */
 
-package nslj.src.math;
+package math;
 
-import nslj.src.lang.*;
+import lang.*;
 
 @SuppressWarnings({"unused", "ParameterCanBeLocal", "Duplicates"})
 public final class NslSum {

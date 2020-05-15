@@ -11,7 +11,7 @@
 //
 //
 
-package nslj.src.math;
+package math;
 
 /**
  * Pow routines.

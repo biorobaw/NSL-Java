@@ -11,7 +11,7 @@
 /**
  * NslInt1 - one dimensional integer array
  */
-package nslj.src.lang;
+package lang;
 
 
 @SuppressWarnings({"Duplicates", "ReturnInsideFinallyBlock", "finally"})

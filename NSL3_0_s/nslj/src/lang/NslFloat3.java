@@ -7,7 +7,7 @@
 ////////////////////////////////////////////////////////////////////////////////
 // NslFloat3.java
 
-package nslj.src.lang;
+package lang;
 
 
 @SuppressWarnings({"Duplicates", "DanglingJavadoc", "UnusedAssignment", "unused", "ReturnInsideFinallyBlock", "finally"})

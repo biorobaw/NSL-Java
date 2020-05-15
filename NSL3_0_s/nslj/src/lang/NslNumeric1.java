@@ -12,7 +12,7 @@
  * array, number objects used
  * in NSL System.
  */
-package nslj.src.lang;
+package lang;
 
 @SuppressWarnings("unused")
 public abstract class NslNumeric1 extends NslNumeric {

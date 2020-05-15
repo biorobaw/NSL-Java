@@ -12,7 +12,7 @@
 /**
  * NslFloat0 - single precision floating point number
  */
-package nslj.src.lang;
+package lang;
 
 @SuppressWarnings({"finally", "ReturnInsideFinallyBlock", "unused", "Duplicates"})
 public class NslFloat0 extends NslNumeric0 {

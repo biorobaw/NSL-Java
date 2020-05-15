@@ -5,12 +5,12 @@
 // Copyright: COPYRIGHT file is included with each such copy.
 // Copyright: Email nsl@java.usc.edu.
 
-package nslj.src.display;
+package display;
 
-import nslj.src.lang.NslHierarchy;
-import nslj.src.lang.NslModule;
-import nslj.src.nsls.struct.Executive;
-import nslj.src.system.NslSystem;
+import lang.NslHierarchy;
+import lang.NslModule;
+import nsls.struct.Executive;
+import system.NslSystem;
 
 import java.awt.*;
 

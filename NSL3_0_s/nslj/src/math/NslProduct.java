@@ -26,7 +26,7 @@
  */
 
 
-package nslj.src.math;
+package math;
 
 public final class NslProduct extends NslProd {
 // this method is just the long name for NslProd

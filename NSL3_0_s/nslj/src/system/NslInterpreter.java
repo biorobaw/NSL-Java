@@ -30,12 +30,12 @@
  * in the command list, it prompts out "Bad Command" error message
  * on the console output.
  *
- * @see nslj.src.cmd.NslCmd
+ * @see cmd.NslCmd
  */
-package nslj.src.system;
+package system;
 
-import nslj.src.cmd.NslCmd;
-import nslj.src.nsls.struct.Executive;
+import cmd.NslCmd;
+import nsls.struct.Executive;
 
 import java.util.StringTokenizer;
 

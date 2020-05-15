@@ -1,10 +1,11 @@
+package model;
 /* M�dulo NSL que representa el esquema motivacional de la rata. 
    Alejandra Barrera
    Versi�n: 2
    Fecha: 19 de abril de 2005
  */
 
-import nslj.src.lang.*;
+import lang.*;
 
 import java.util.Arrays;
 import java.util.Random;

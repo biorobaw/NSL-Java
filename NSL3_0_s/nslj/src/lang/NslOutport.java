@@ -24,7 +24,7 @@
 /**
  * Output ports of a nsl module (Double buffered)
  */
-package nslj.src.lang;
+package lang;
 
 @SuppressWarnings({"WeakerAccess", "ConstantConditions"})
 public class NslOutport extends NslPort {

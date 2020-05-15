@@ -15,7 +15,7 @@
  * A NslData may or may not have a port attached to it.
  */
 
-package nslj.src.lang;
+package lang;
 
 public abstract class NslData extends NslBase {
     // Number types 

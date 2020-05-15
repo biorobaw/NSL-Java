@@ -11,11 +11,11 @@
 //
 //
 
-package nslj.src.math;
+package math;
 
 //import java.util.Arrays;
 
-import nslj.src.lang.*;
+import lang.*;
 
 @SuppressWarnings({"unused", "Duplicates", "UnusedAssignment"})
 public final class NslSetSector {

@@ -8,7 +8,7 @@
 // NslDinString0.java
 ////////////////////////////////////////////////////////////////////////////////
 
-package nslj.src.lang;
+package lang;
 
 @SuppressWarnings("unused")
 public class NslDinString0 extends NslString0 {

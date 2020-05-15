@@ -41,13 +41,13 @@
 
 
 // 2Saturation functions
-package nslj.src.math;
-import nslj.src.lang.NslDouble0;
-import nslj.src.lang.NslDouble1;
-import nslj.src.lang.NslDouble2;
-import nslj.src.lang.NslFloat0;
-import nslj.src.lang.NslFloat1;
-import nslj.src.lang.NslFloat2;
+package math;
+import lang.NslDouble0;
+import lang.NslDouble1;
+import lang.NslDouble2;
+import lang.NslFloat0;
+import lang.NslFloat1;
+import lang.NslFloat2;
 
 
 @SuppressWarnings({"unused", "ParameterCanBeLocal", "Duplicates"})

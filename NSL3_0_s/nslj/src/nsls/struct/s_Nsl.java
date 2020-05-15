@@ -9,15 +9,15 @@
 // Revision 1.2  1998/02/03 00:23:51  erhan
 // adapted new nsls structure
 //
-package nslj.src.nsls.struct;
+package nsls.struct;
 
-import nslj.src.cmd.NslThreadCommands;
-import nslj.src.display.NslCanvas;
-import nslj.src.display.NslColor;
-import nslj.src.display.NslDisplaySystem;
-import nslj.src.display.NslFrame;
-import nslj.src.lang.*;
-import nslj.src.math.*;
+import cmd.NslThreadCommands;
+import display.NslCanvas;
+import display.NslColor;
+import display.NslDisplaySystem;
+import display.NslFrame;
+import lang.*;
+import math.*;
 import tcl.lang.*;
 
 import java.util.Vector;

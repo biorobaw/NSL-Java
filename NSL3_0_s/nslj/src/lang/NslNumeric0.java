@@ -14,7 +14,7 @@
  * in NSL System.
  */
 
-package nslj.src.lang;
+package lang;
 
 @SuppressWarnings("unused")
 public abstract class NslNumeric0 extends NslNumeric {

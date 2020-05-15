@@ -1,3 +1,4 @@
+package model;
 import java.lang.reflect.Constructor;
 import java.lang.reflect.InvocationTargetException;
 
@@ -5,7 +6,7 @@ import robot.IRobot;
 
 
 
-import nslj.src.lang.NslModule;
+import lang.NslModule;
 import robot.KheperaClient;
 
 public class RobotFactory {

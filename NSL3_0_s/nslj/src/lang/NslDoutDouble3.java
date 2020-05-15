@@ -8,9 +8,9 @@
 // NslDoutDouble3.java
 ////////////////////////////////////////////////////////////////////////////////
 
-package nslj.src.lang;
+package lang;
 
-//import nslj.src.math.NslSigmoid;
+//import math.NslSigmoid;
 
 
 @SuppressWarnings("unused")

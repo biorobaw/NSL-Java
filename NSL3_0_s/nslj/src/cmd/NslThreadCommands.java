@@ -5,12 +5,12 @@
 // Copyright: COPYRIGHT file is included with each such copy.
 // Copyright: Email nsl@java.usc.edu.
 
-package nslj.src.cmd;
+package cmd;
 
-import nslj.src.display.NslExecutive;
-import nslj.src.nsls.struct.Executive;
-import nslj.src.system.NslInterpreter;
-import nslj.src.system.NslSystem;
+import display.NslExecutive;
+import nsls.struct.Executive;
+import system.NslInterpreter;
+import system.NslSystem;
 
 @SuppressWarnings("Duplicates")
 public class NslThreadCommands extends Thread {

@@ -20,7 +20,7 @@
 ////////////////////////////////////////////////////////////////////////////////
 // NslFloatObj.java
 
-package nslj.src.lang;
+package lang;
 
 // get float class wrapper
 public class NslFloatObj {

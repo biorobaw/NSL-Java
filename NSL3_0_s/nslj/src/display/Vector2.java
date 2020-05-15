@@ -6,7 +6,7 @@
 // Copyright: Email nsl@java.usc.edu.
 
 
-package nslj.src.display;
+package display;
 
 @SuppressWarnings({"WeakerAccess", "Duplicates", "unused", "ParameterCanBeLocal"})
 public class Vector2 {

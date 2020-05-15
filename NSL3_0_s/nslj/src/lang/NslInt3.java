@@ -7,7 +7,7 @@
 ////////////////////////////////////////////////////////////////////////////////
 // NslInt3.java
 
-package nslj.src.lang;
+package lang;
 
 
 @SuppressWarnings({"unused", "Duplicates", "UnusedAssignment", "DanglingJavadoc", "finally", "ReturnInsideFinallyBlock"})

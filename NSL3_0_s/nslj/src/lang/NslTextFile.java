@@ -8,9 +8,9 @@
 // NslFile.java
 ////////////////////////////////////////////////////////////////////////////////
 
-package nslj.src.lang;
+package lang;
 
-import nslj.src.nsls.struct.Executive;
+import nsls.struct.Executive;
 import tcl.lang.*;
 
 import java.io.*;
