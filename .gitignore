@@ -17,3 +17,4 @@ out
 .project
 /.metadata/
 /.recommenders/
+target/

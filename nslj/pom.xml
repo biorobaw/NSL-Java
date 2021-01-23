@@ -1,0 +1,75 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 https://maven.apache.org/xsd/maven-4.0.0.xsd">
+	<modelVersion>4.0.0</modelVersion>
+	<groupId>com.github.biorobaw.nslj</groupId>
+	<artifactId>nslj</artifactId>
+	<version>1.0</version>
+	<name>NSLJ</name>
+	<description>Neural Simulation Language implemented in java</description>
+
+	<properties>
+		<maven.compiler.source>14</maven.compiler.source>
+		<maven.compiler.target>14</maven.compiler.target>
+	</properties>
+
+	<repositories>
+ 		<repository>
+			<id>vecmath</id>
+			<url>https://clojars.org/repo/</url>
+		</repository>
+		
+	</repositories>
+
+	<scm>
+		<connection>scm:git:http://github.com/philjord/java3d-core</connection>
+		<developerConnection></developerConnection>
+		<tag>HEAD</tag>
+		<url>https://github.com/philjord/java3d-examples</url>
+	</scm>
+
+	<dependencies>
+
+		<dependency>
+			<groupId>com.github.dronox</groupId>
+			<artifactId>jtcl</artifactId>
+			<version>2.9.3</version>
+		</dependency>
+
+		<dependency>
+		    <groupId>com.j3d</groupId>
+		    <artifactId>jogamp</artifactId>
+		    <version>1.0</version>
+		    <scope>system</scope>
+		    <systemPath>${project.basedir}/deps/jogamp-fat.jar</systemPath>
+		</dependency>
+		
+		<dependency>
+		    <groupId>com.j3d</groupId>
+		    <artifactId>vecmath</artifactId>
+		    <version>1.0</version>
+		    <scope>system</scope>
+		    <systemPath>${project.basedir}/deps/vecmath.jar</systemPath>
+		</dependency>
+		
+		<dependency>
+		    <groupId>com.j3d</groupId>
+		    <artifactId>j3dcore</artifactId>
+		    <version>1.0</version>
+		    <scope>system</scope>
+		    <systemPath>${project.basedir}/deps/j3dcore.jar</systemPath>
+		</dependency>
+		
+		<dependency>
+		    <groupId>com.j3d</groupId>
+		    <artifactId>j3dutils</artifactId>
+		    <version>1.0</version>
+		    <scope>system</scope>
+		    <systemPath>${project.basedir}/deps/j3dutils.jar</systemPath>
+		</dependency>
+
+
+
+	</dependencies>
+
+</project>

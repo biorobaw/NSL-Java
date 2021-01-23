@@ -1,0 +1,47 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 https://maven.apache.org/xsd/maven-4.0.0.xsd">
+	<modelVersion>4.0.0</modelVersion>
+	<groupId>com.github.biorobaw.nslj_models</groupId>
+	<artifactId>generative_pc_model_gonzalo</artifactId>
+	<version>0.0.1-SNAPSHOT</version>
+
+	<properties>
+		<maven.compiler.source>14</maven.compiler.source>
+		<maven.compiler.target>14</maven.compiler.target>
+	</properties>
+
+	<repositories>
+		<repository>
+			<id>alfresco-repo</id>
+			<url>https://artifacts.alfresco.com/nexus/content/repositories/public/</url>
+		</repository>
+	</repositories>
+
+	<dependencies>
+		<dependency>
+			<groupId>com.github.biorobaw.nslj</groupId>
+			<artifactId>nslj</artifactId>
+			<version>1.0</version>
+		</dependency>
+
+		<dependency>
+			<groupId>jcharts</groupId>
+			<artifactId>jcharts</artifactId>
+			<version>0.7.5</version>
+		</dependency>
+
+		<dependency>
+			<groupId>com.googlecode.javacpp</groupId>
+			<artifactId>javacpp</artifactId>
+			<version>0.7</version>
+		</dependency>
+
+		<dependency>
+			<groupId>com.googlecode.javacv</groupId>
+			<artifactId>javacv</artifactId>
+			<version>0.1</version>
+		</dependency>
+	</dependencies>
+
+</project>
