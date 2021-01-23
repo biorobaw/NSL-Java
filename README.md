@@ -1,62 +1,35 @@
 NSL 3.0s for Java
-Installation procedure for Windows 7 or higher
 
 -=-
 
-To install NSL after cloning this repository:
+Requirements:
 
-1.  Install Java SE Development Kit 8 from Oracle's website.
-    https://www.oracle.com/technetwork/java/javase/downloads/jdk8-downloads-2133151.html
+- Java 10 or greater
+- Eclipse (not required but run instructions are provided only for Eclipse)
 
-    Alternatively, you may install AdoptOpenJDK 8 or Amazon Corretto 8 instead which are based on the OpenJDK open source libraries.
-    https://adoptopenjdk.net/
-    https://docs.aws.amazon.com/corretto/latest/corretto-8-ug/downloads-list.html
+-=-
 
-2.  Install Java3D 1.5.1 from Oracle's website.
-    https://www.oracle.com/technetwork/java/javase/tech/index-jsp-138252.html
+How to run the generative place cell model.
 
-3.  Copy the `NSL3_0_s` folder to `Program Files`.
+1.  After cloning, open eclipse and choose the project's base folder as eclipse's workspace
+2.  Import maven projects 'nslj' and 'generative_pc_model_gonzalo'
+	1. Go to 'File->Import'
+	2. From the list of options, choose 'Existing Maven Projects'
+	3. In the next screen, select the project's base folder as the 'root directory'
+	4. Two project (pom files) should appear, select them both and click finish.
+3. Create a 'run configuration' and run it:
+	1. In the package explorer, right click project "generative_pc_model"
+	2. From the dropdown list, choose option 'Run As -> Run Configurations...'
+	3. From the list, double clic 'Java Application' to create a new configuration
+	4. Choose any desired name
+	5. On tab 'Main', set 'Main class' to 'com.github.biorobaw.nslj.main.NslMain' (Do not copy the apostrophes)
+	6. On tab 'Arguments' set the program arguments to 'com.github.biorobaw.nslj_models.generative_pc_model_gonzalo.model.WGModel' (Do not copy the apostrophes)
+	7. Clic run, a gui should soon appear
+4.  Run the simulation:
+	1. In the gui, choose option 'Run -> run'
 
-4.  Copy the files `SCS_PREFERENCES` and `SCS_LIBRARY_PATHS` to your home folder.
-    The folder to store it in should be `C:\Users\<username>`.
+-=-
 
-5.  Set the following system environment variables:
-    <jdk-version> for JAVA_HOME is the folder in `C:\Program Files\Java\`.
-    If using OpenJDK, the JDK folder may be stored under the name of your OpenJDK vendor like `C:\Program Files\Amazon Corretto\`. Change `<jdk-version>` in the line that sets `JAVA_HOME` to your JDK folder name.
-```
-JAVA_HOME = "C:\Program Files\Java\<jdk-version>"
+Notes
 
-NSL_OS = "nt"
-
-CLASSPATH = ".;C:\Program Files\NSL3_0_s\nslc\src;C:\Program Files\NSL3_0_s;C:\Program Files\NSL3_0_s\nslj\src\main;C:\Program Files\NSL3_0_s\nslj\src\nsls\jacl;C:\Program Files\NSL3_0_s\nslj\src\nsls\tcljava"
-
-PATH = "%JAVA_HOME%\bin;C:\Program Files\NSL3_0_s\nslj\bin;C:\Program Files\NSL3_0_s\nslc\bin"
-```
-
-6.  Compile the source files by running `javac @sources.txt` with `C:\Program Files\NSL3_0_s` as your working directory.
-
-Basic NSL installation should now be complete.
-
-To uninstall NSL at any time:
-
-1.  Remove the `NSL3_0_s` folder.
-
-2.  Remove the following environment variables:
-```
-NSL_OS
-```
-
-3. Remove the following entries from the PATH environment variable:
-```
-C:\Program Files\NSL3_0_s\nslj\bin
-C:\Program Files\NSL3_0_s\nslc\bin
-```
-
-4. Remove the following entries from the CLASSPATH environment variable:
-```
-C:\Program Files\NSL3_0_s\nslc\src
-C:\Program Files\NSL3_0_s
-C:\Program Files\NSL3_0_s\nslj\src\main
-C:\Program Files\NSL3_0_s\nslj\src\nsls\jacl
-C:\Program Files\NSL3_0_s\nslj\src\nsls\tcljava
-```
+* Code not required to run the model "generative_pc_model_gonzalo" waa removed from the master branch. If necessary, the original code can still be found in branch 'old_code'
