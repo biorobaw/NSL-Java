@@ -1,6 +1,0 @@
-Manifest-Version: 1.0
-Main-Class: SchEditorFrame
-Name: SchEditorFrame.class
-Implementation-Title: "Schematic Editor System" 
-Implementation-Version: "NSL3_0_s"
-Implementation-Vendor: "USC Human Brain Project"

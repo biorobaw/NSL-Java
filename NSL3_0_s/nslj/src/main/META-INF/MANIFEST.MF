@@ -1,5 +1,0 @@
-Manifest-Version: 1.0
-Class-Path: .;%NSLJ_ROOT%\nslc\src;%NSLJ_ROOT%;%NSL_SIM%\main;%NSL_SIM
- %\nsls\jacl;%NSL_SIM%\nsls\tcljava
-Main-Class: nslj.src.main.NslMain
-
