@@ -9,7 +9,7 @@ Requirements:
 
 -=-
 
-How to run the generative place cell model.
+How to run the generative place cell model (for instructions with images see file `'run instructions.docx'` in the `docs` folder).
 
 1.  After cloning, open eclipse and choose the project's base folder as eclipse's workspace
 2.  Import maven projects 'nslj' and 'generative_pc_model_gonzalo'
